@@ -1,0 +1,66 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+	}
+	ol{
+		padding-top: 10;
+	}
+	
+	li {
+		padding-bottom: 15;
+	}
+	tr{
+		valign: top;
+	}
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;				
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>Bases mathématiques - 8MAT146</title>
+	</HEAD>
+	<BODY>
+	<h1>Exercices de vérification</h1>
+	<ol>
+		<li><p>Résoudre les équations suivantes :</p>
+		<ol type="a">
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?3^x=5^{2x+1}"/></li>
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?7\times 5^{2x-3}=4\times 3^{3x-6}"/></li>
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+		log_2\left(x^2-4x+4\right)=4"/></li>
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+		log\left\(2x+1\right)=1-log\left(3x-2\right)"/></li>
+		</ol>
+	</ol>
+	
+	
+	<a href="javascript:toggle('toggleText1');">Afficher</a>
+	<div id="toggleText1" style="display:none"><ol>
+	<li><ol type="a">
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?x=\frac{ln(5)}{ln(3)-2ln(5)}=-0,76"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?x=\frac{6ln(3)-ln(4)-3ln(5)+ln(7)}{3ln(3)-2ln(5)}=30,18"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?x\in\left\{-2,6\right\}"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?x=\frac{3}{2}"/></li>
+		</ol></li>
+	</ol></div>
+		
+
+	</body>
+</html>

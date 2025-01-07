@@ -1,0 +1,102 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+	}
+	ol{
+		padding-top: 10;
+	}
+	
+	li {
+		padding-bottom: 15;
+	}
+	tr{
+		valign: top;
+	}
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;				
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>Bases mathématiques - 8MAT146</title>
+	</HEAD>
+	<BODY>
+	<h1>Exercices de vérification</h1>
+	<ol>
+		<li>Démontrer les identités trigonométriques suivantes :
+		<ol type="a">
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\cos^2 x+\sec^2 x \sin^2 x \cos^2 x=1"/></li>
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\frac{\sin^2 x-\sin^4 x}{\cos^4 x-\cos^2 x}=-1"/></li>
+		</ol></li>
+		
+		<li>Trouver toutes les solutions des équations trigonométriques suivantes :
+		<ol type="a">
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?x\left(2\sin x +\sqrt{3}\right)=0"/></li>
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\sin x \cos x-\cos^2 x=0"/></li>
+
+		</ol></li>
+	</ol>
+	
+	<!-- Saut de page -->
+	<p style="page-break-after: always;"></p>
+	<h3>Réponses :</h3>
+	<a href="javascript:toggle('toggleText1');">Afficher</a>
+	<div id="toggleText1" style="display:none"><ol>
+	<ol>
+		<li>
+		<ol type="a">
+			<li><br><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\begin{align*}
+				\cos^2 x+\sec^2 x \sin^2 x \cos^2 x &=1\\
+				\cos^2 x+\frac{1}{\cos^2 x}\sin^2 x \cos^2&=\\
+				\cos^2 x+\sin^2 x&=\\
+				1&=\\
+				&\blacksquare				
+			\end{align*}"/></li>
+			<li><br>
+			<img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\begin{align*}
+				\frac{\sin^2 x-\sin^4 x}{\cos^4 x-\cos^2 x}&=-1 \\
+				\frac{\sin^2 x\left(1-\sin^2 x\right)}{-\cos^2 x\left(-\cos^2 x+1\right)}&= \\
+				\frac{\sin^2 x \cos^2 x}{-\cos^2 x \sin^2 x}&= \\
+				-1&=\\
+				\blacksquare
+			\end{align*}"/></li>
+		</ol></li>
+		
+		<li><ol type="a">
+			<li><br><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\begin{align*}
+			S=\{0\} \cup \left\{x\in \mathbb{R}|x=\frac{4Pi}{3}+n\pi, n\in\mathbb{N} \right\} \cup
+			\left\{x\in \mathbb{R}|x=\frac{5Pi}{3}+n\pi, n\in\mathbb{N} \right\}
+			\end{align*}"/></li></ol></li>
+			<li><br><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\begin{align*}
+			\cos x=0  &\text{ ou }\tan x=0 \\
+			S=\left\{x\in \mathbb{R}|x=\frac{\pi}{2}+n\pi, n\in\mathbb{N} \right\} & \cup
+			\left\{x\in \mathbb{R}|x=\frac{Pi}{4}+n\pi, n\in\mathbb{N} \right\}
+			\end{align*}"/></li>
+	</ol></div>
+		
+
+	</body>
+</html>

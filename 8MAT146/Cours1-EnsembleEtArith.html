@@ -1,0 +1,102 @@
+<HTML>
+	<HEAD>
+	<style>
+	li {
+		padding-bottom: 10;
+	}
+	td {
+		padding-bottom: 10;
+		padding-right: 30;
+	}
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	</style>
+	<title>Bases mathématiques - 8MAT146</title>
+	</HEAD>
+	<BODY>
+	<h1>Les grands ensembles</h1>
+	
+	<img width=50% src="Cours1-SystemeDeNombre.jpg"/>
+	
+	<ul>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\mathbb{N}"/> : les nombres naturels .  Ce sont les nombres positifs en plus du 0.  <img valign=middle src="http://latex.codecogs.com/svg.latex?\text{Ex.:}\left\{0,\,1,\,\frac{4}{2},\,\sqrt{4}\right\}"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\mathbb{Z}"/> : les entiers relatifs.  Ce sont les nombres sans partie fractionnaire.  <img valign=middle src="http://latex.codecogs.com/svg.latex?\text{Ex.:}\left\{0,\,-1,\,-\sqrt{16},\, \frac{-12}{-4}\right\}"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\mathbb{Q}"/> : les nombres rationnels.  Ce sont les nombres à représentation décimale finie ou infine périodique.  <img valign=middle src="http://latex.codecogs.com/svg.latex?\text{Ex.:}\left\{-2\,;0\,;1\,;\frac{4}{3}\,;0,13\,; 0,1\overline{34}\,; \frac{1}{3}\right\}"/> </li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\mathbb{Q'}"/> : les nombre irrationnels.  Ce sont tous les nombre réels qui ne sont pas rationnels.  <img valign=middle src="http://latex.codecogs.com/svg.latex?\text{Ex.:}\left\{\sqrt{3},\,\pi,\, e,\, \frac{2\sqrt{7}}{3}\right\}"/>  </li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\mathbb{R}"/> : les nombres réels.  Ce sont l'ensemble des nombres rationnels et irrationnels.  Dans ce cours, il n'y aura pas d'autres nombres.  Lorsque l'on ne trouve pas de solution dans les réels, on dira qu'il n'y a pas de solution.</li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\mathbb{C}"/> : les nombres complexes.  Ces nombres peuvent présenter une partie imaginaire (racine d'un nombre négatif).  <img valign=middle src="http://latex.codecogs.com/svg.latex?\text{Ex.:}\left\{2,\,\sqrt{-4},\, \sqrt{-5},\,\frac{2+3i}{2}\right\}"/></li>
+	</ul>
+	
+	<!-- Saut de page -->
+	<p style="page-break-after: always;"/>
+
+	<h1>Arithmétique de base</h1>
+
+	<h2>Priorités des opérations</h2>
+	
+	Les expressions arithmétiques (et algébriques) respectent une priorité des opérations.  On évalue une expression en effectuant en bon ordre :
+	<ol>
+		<li>les parenthèses <img valign=middle src="http://latex.codecogs.com/svg.latex?\left(\;\right) \text{ ou } \left[\; \right]"/></li>
+		<li>les exposants </li>
+		<li>les multiplication <img valign=middle src="http://latex.codecogs.com/svg.latex?\left(\times \right)"/> et les divisions <img valign=middle src="http://latex.codecogs.com/svg.latex?\left(\div \right)"/></li>
+		<li>les additions <img valign=middle src="http://latex.codecogs.com/svg.latex?\left(+ \right)"/> et les soustractions <img valign=middle src="http://latex.codecogs.com/svg.latex?\left(- \right)"/></li>
+	</ol>
+
+
+	<h4>Exemple:</h4>
+	<ul>	
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?2\times5-5\times3=-5"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?	-4\times(-2+5)=-4\times3=-12"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?	(3+2)-4^2+15\div 3=-6"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?(5-7)^2=4"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{4+2\times 5}{4+3}=2"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?537+275=812"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?734-685=49"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?364\times 435=158\,340"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?370\,728\div 542=684"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{3}{4}+\frac{2}{7}=\frac{29}{28}"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{3}{4}\times\frac{2}{7}=\frac{6}{28}=\frac{3}{14}"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{3}{4}\div\frac{2}{7}=\frac{3}{4}\times\frac{7}{2}=\frac{21}{8}"/></li>
+	</ul>
+	
+	<!-- Saut de page -->
+	<p style="page-break-after: always;"/>
+
+	<h2>Propriétés des réels</h2>
+	
+	<p>Trois propriétés relativement simples sont le fondement de toute l'algèbre avancée que nous verrons dans ce cours.  Il s'agit de la <b>commutativité</b> de l'addition et de la multiplication, l'<b>associativité</b> de l'addition et de la multiplication et finalement la <b>distributivité</b> à gauche et à droite de la multiplication sur l'addition.</p>
+	
+	<dd>
+		 <img valign=middle src="http://latex.codecogs.com/svg.latex?\text{Soit }a,\,b \text{ et } c\,\,\text {trois r\'eels.  Alors :}"/>
+		<br><br><table>
+		<tr><td><img valign=middle src="http://latex.codecogs.com/svg.latex?a+b=b+a"/></td><td>commutativité de l'addition</td></tr>
+		<tr><td><img valign=middle src="http://latex.codecogs.com/svg.latex?a\times b=b\times a"/></td><td>commutativité de la multiplication</td></tr>
+		<tr><td><img valign=middle src="http://latex.codecogs.com/svg.latex?(a+b)+c=a+(b+c)=a+b+c"/></td><td>associativité de l'addition</td></tr>
+		<tr><td><img valign=middle src="http://latex.codecogs.com/svg.latex?(a\times b)\times c=a\times (b\times c)=a\times b\times c"/></td><td>associativité de la multiplication</td></tr>
+		<tr><td><img valign=middle src="http://latex.codecogs.com/svg.latex?a\times (b+c)=ab+ac"/></td><td>distributivité à gauche</td></tr>
+		<tr><td><img valign=middle src="http://latex.codecogs.com/svg.latex?(a+b)\times c=ac+bc"/></td><td>distributivité à droite</td></tr>
+	</table></dd>
+	
+	<h2>Propriétés des exposants</h2>
+	<dd>
+		 <img valign=middle src="http://latex.codecogs.com/svg.latex?\text{Soit }a\in \mathbb{R},b\in \mathbb{R^*},m\in\mathbb{N^*}\text{ et }n\in\mathbb{N^*}\text{. Alors :}"/>
+		<br>
+		<ol>
+		<table><tr><td>
+		
+		<tr><td><li><img src="http://latex.codecogs.com/svg.latex?a^0=1"/></li></td></tr>
+		<tr><td><li><img src="http://latex.codecogs.com/svg.latex?b^m b^n=b^{m+n}"/></li></td></tr>
+		<tr><td><li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{b^m}{b^n}=b^{m-n}"/></li></td></tr>
+		<tr><td><li><img valign=middle src="http://latex.codecogs.com/svg.latex?\left(b^m\right)^n=b^{mn}"/></li></td></tr>
+		<tr><td><li><img valign=middle src="http://latex.codecogs.com/svg.latex?\left(ab\right)^n=a^n b^n"/></li></td></tr>
+		<tr><td><li><img valign=middle src="http://latex.codecogs.com/svg.latex?\left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}"/></li></td></tr>
+		<tr><td><li><img valign=middle src="http://latex.codecogs.com/svg.latex?b^{-n}=\frac{1}{b^n}"/></li></td></tr>	
+	</ol></dd>
+	
+	</BODY>
+</HTML>
+
+
+
+
+
+

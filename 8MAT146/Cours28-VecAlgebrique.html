@@ -1,0 +1,73 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+	}
+	ol{
+		padding-top: 10;
+	}
+	
+	li {
+		padding-bottom: 15;
+	}
+	tr{
+		valign: top;
+	}
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;				
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>Bases mathématiques - 8MAT146</title>
+	</HEAD>
+	<BODY>
+	<h1>Exercices de vérification</h1>
+	<ol>
+		<li>Déterminer les composantes du vecteur <img src="http://latex.codecogs.com/svg.latex?\overrightarrow{u}"/>, si 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?||\overrightarrow{u}||=18"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?\theta_{\overrightarrow{u}}=210^o"/>.</li>
+		
+		<li>Déterminer la longueur et la direction du vecteur <img valign=middle src="http://latex.codecogs.com/svg.latex?\overrightarrow{u}=\begin{bmatrix}8 & -6 \end{bmatrix}"/>.</li>
+		
+		<li>Calculer l'angle entre les vecteurs 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex? \overrightarrow{u}=\begin{bmatrix}-3 & -5 \end{bmatrix}"/> et 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex? \overrightarrow{v}=\begin{bmatrix}-12 & 7 \end{bmatrix}"/>.
+		
+		<li>Deux forces, l’une de <img valign=middle src="http://latex.codecogs.com/svg.latex?20kN"/> et l’autre de <img src="http://latex.codecogs.com/svg.latex?16kN"/>, sont appliquées en un point.  Si l’angle entre ces deux forces est de <img  src="http://latex.codecogs.com/svg.latex?60^o"/>  , calculer l'intensité de la force résultante à ce point.</li>
+		
+		<li><p>Calculer la tension dans les câbles représentés par la situation suivante.</p>
+		<img size="300" src="Cours28-VecteursAlgebrique.jpg" /></li>
+	</ol>
+	
+	
+	<a href="javascript:toggle('toggleText1');">Afficher</a>
+	<div id="toggleText1" style="display:none"><ol>
+	<ol>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\overrightarrow{u}=
+		\begin{bmatrix}-9\sqrt{3} & -9 \end{bmatrix} =
+		\begin{bmatrix}-15,59 & -9 \end{bmatrix}"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?||\overrightarrow{u}||=10"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?\theta_{\overrightarrow{u}}=323^o"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\theta=arccos\left(\frac{(-3)(-12)+(-5)(7)}{\sqrt{(-3)^2+(-5)^2}\sqrt{(-12)^2+7^2}}\right)=
+		89,3^o"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?31,2kN"/></li>
+		<li>La tension est de <img valign=middle src="http://latex.codecogs.com/svg.latex?38,9kN"/></li>
+	</ol>
+	</body>
+</html>

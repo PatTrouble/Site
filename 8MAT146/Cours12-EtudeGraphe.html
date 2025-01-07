@@ -1,0 +1,119 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+	}
+	ol{
+		padding-top: 10;
+	}
+	
+	li {
+		padding-bottom: 15;
+	}
+	tr{
+		valign: top;
+	}
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;				
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>Bases mathématiques - 8MAT146</title>
+	</HEAD>
+	<BODY>
+	<h1>Exercices de vérification</h1>
+	<ol>
+	<li>
+	Soit <img valign=middle src="http://latex.codecogs.com/svg.latex?f(x)=3x^2+6x-3"/> et 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?g(x)=4x-2"/>.<br>
+	Évaluer les expressions suivantes (simplifier vos réponses).
+			
+	<ol type="a">
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?f(-2)"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?f(2x-1)"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?f(g(x))"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?g^{-1}(x)"/></li>
+	</ol>
+	</li>
+	
+	<li>Étudier (domaine, image, signes, croissance, extrémums) la fonction <img valign=middle src="http://latex.codecogs.com/svg.latex?f"/> représentée sur la graphique suivant.<br><br>
+	<img src="Cours12-GrapheFonction.jpg"/></li>
+	
+	<li>Calculer le domaine de la fonction <img  src="http://latex.codecogs.com/svg.latex?f(x)=\frac{\sqrt{x^2+x-6}}{x+2}"/>.</li>
+	
+	
+	</ol>
+	<!-- Saut de page -->
+	<p style="page-break-after: always;"/>
+	<h3>Réponses :</h3>
+	<ol>
+	<li><a href="javascript:toggle('toggleText1');">Afficher</a>
+	<div id="toggleText1" style="display:none">
+	<ol type="a"><table><tr>
+		<td><li><img valign=middle src="http://latex.codecogs.com/svg.latex?-3"/></li></td>
+		<td><li><img valign=middle src="http://latex.codecogs.com/svg.latex?12x^2-6
+		"/></li></td>
+		<td><li><img valign=middle src="http://latex.codecogs.com/svg.latex?48x^2-24x-3
+		"/></li></td>
+		<td><li><img valign=middle src="http://latex.codecogs.com/svg.latex?g^{-1}(x)=\frac{x}{4}+\frac{1}{2}
+		"/></li></td>
+	</tr></table></ol>
+	</div></li>
+	<li><a href="javascript:toggle('toggleText2');">Afficher</a>
+	<div id="toggleText2" style="display:none">
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{align*}
+	dom f &: -\infty,-3[\;\cup\;[-2,5[\;\cup\;]5,\infty\\ 
+	ima f &: ]-2,\infty\\
+	O.O. &:	(0,1)\\
+	\text{Fonction } + &: -\infty,-3[\;\cup\;[-2,4[\;\cup\;]6,\infty\\
+	\text{Fonction } - &: ]4,6[\\
+	\text{Fonction nulle} &: \{4,6\}\\
+	\text{Croissante} &: -\infty,-3[\;\cup\;]-2,0[\;\cup\;[0,2]\;\cup\;]5,\infty \\
+	\text{D\'eroissante} &: [2,5[\\
+	\text{Max. relatif} &: {2}\\
+	\text{Min. relatif} &: \varnothing \\
+	\text{Max. absolu} &: \varnothing\\
+	\text{Min. absolu} &: \varnothing\\	 
+	\end{align*}"/></div></li>
+	
+	<li><a href="javascript:toggle('toggleText3');">Afficher</a>
+	<div id="toggleText3" style="display:none">
+	Contrainte 1 : <img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+	x^2+x-6 &\geq 0\\
+	(x+3)(x-2) &\geq 0
+	\end{align}"/>, vrai si <img valign=middle src="http://latex.codecogs.com/svg.latex?x \in -\infty,-3]\cup [2,\infty["/>.<br>
+	<br>
+	Contrainte 2: <img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+	 x+2 &\neq 0 \\
+	 x &\neq -2
+	 \end{aligh*}"/>.<br><br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?dom f:]-\infty,-3]\cup [2,\infty["/><br>
+	En effet : <img valign=middle src="http://latex.codecogs.com/svg.latex? -2\notin [-3,2]"/>, alors la contraintes <img valign=middle src="http://latex.codecogs.com/svg.latex?x \neq -2"/> ne change rien. 
+	</div>
+	</li></ol>
+	
+	</BODY>
+</HTML>
+
+
+
+
+
+
