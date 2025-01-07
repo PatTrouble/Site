@@ -1,0 +1,139 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+		border:1;
+	}
+	li {
+		padding-bottom: 10;
+	}
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;
+		text-align: center;	
+		valign:middle;		
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8MAT142 - Algèbre vectorielle et matricielle</title>
+	</HEAD>
+	<BODY>
+	<h1>Laboratoire 1 : Les matrices</h1>
+	
+
+	<ol> 
+		<li><!-- #1 -->
+			Soit les matrices suivantes : (15 pts)
+			<table><tr>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			A=\begin{bmatrix}
+				-3 & 2\\ 
+				5 & 1\\ 
+				-2 & 3
+			\end{bmatrix}"/></td>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			B=\begin{bmatrix}
+				4 & -2 & 1 \\
+				-2 & 5 & 3 
+			\end{bmatrix}"/></td>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			C=\begin{bmatrix}
+				5 & 4 & 4 \\ 
+				4 & 3 & 3 \\
+				-5&-4 &-3
+			\end{bmatrix}"/></td>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			D=\begin{bmatrix}
+				-3 & 4 & 0 \\
+				3 & -5 & -1 \\
+				1 & 0 & 1
+			\end{bmatrix}"/></td>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			E=\begin{bmatrix}
+				2 & 2 \\
+				3 & 3 
+			\end{bmatrix}"/></td></tr></table>
+			<ol type="a">
+				<li>Quelle sont les dimensions de ces matrices ?</li>
+				
+				<li>Effectuer, si elle existent,  les opérations suivantes.  Dans le cas contraire justifier votre réponse.
+					<ul>
+					<li><img valign=middle src="http://latex.codecogs.com/svg.latex?AB"/></li>
+					<li><img valign=middle src="http://latex.codecogs.com/svg.latex?AC"/></li>
+					<li><img valign=middle src="http://latex.codecogs.com/svg.latex?CD"/></li>
+					<li><img valign=middle src="http://latex.codecogs.com/svg.latex?DC"/></li>
+					<li><img valign=middle src="http://latex.codecogs.com/svg.latex?BAE"/></li>			
+					</ul>
+				</li>
+			<!--
+				A) -16 16 3		B)	N/A		C) I	D) I		E) -21 -21
+				    18 -5 8											80  80	
+				   -14 19 7	-->			
+			</ol>
+		</li>
+		
+		<li>La matrice <img valign=middle src="http://latex.codecogs.com/svg.latex?A_n=[a_{ij}]_{n\times n} \text{ o\`u } a_{ij}=(i+1)(j-1)"/> (5 pts).
+		<ol>
+			<li>Construire la matrice <img valign=middle src="http://latex.codecogs.com/svg.latex?A_1"/>.</li>
+			<li>Construire la matrice <img valign=middle src="http://latex.codecogs.com/svg.latex?A_2"/>.</li>
+			<li>Construire la matrice <img valign=middle src="http://latex.codecogs.com/svg.latex?A_3"/>.</li>
+		</ol>
+		
+		
+		<li>Résoudre le système d'équations linéaires suivants en utilisant la méthode de la matrice inverse (7 pts).
+		<ol>
+			<img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\begin{cases}
+			 3x-2y &= 6  \\ 
+			 2x+4y &= 20 
+			\end{cases}"/></p>
+		</ol>
+		
+		<!-- det = 16 x=4  y=3		1	|4	2|
+									16	|-2	3|--></li>
+									
+		<!--<li>Calculer le déterminant de la matrice (10 pts)
+		<ol>
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?
+			A=\begin{bmatrix}
+				1 & -4 & 0 & 3  \\ 
+				2 & 1 & 2 & 2  \\ 
+				0 & 3 & 0 & 1  \\ 
+				1 & 2 & 0 & 2
+			\end{bmatrix}"/> 
+		</ol><!-- det A = 18  -->
+			
+		</li>
+	</ol>
+
+	<h2>Remise</h2>
+
+	<ul>
+		<li>3 points sont réservés à la propreté et la lisibilité du travail.</li>
+		<li>Tout retard sera pénalisé de 10% plus 10% par jour de retard supplémentaire.</li>
+		<li>Remettre une copie par équipe de 2 ou 3.</li>		
+		<li>Remettre le laboratoire au plus tard le lundi <b>16 septembre avant 13h00</b> dans ma case au DIM ou en main propore au laborantin.</li>
+	</ul>
+	</BODY>
+</HTML>
+
+
+
+
+
+

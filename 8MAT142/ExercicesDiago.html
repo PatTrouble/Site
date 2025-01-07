@@ -1,0 +1,229 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+		border:1;
+	}
+	li {
+		padding-bottom: 40;
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;
+		text-align: center;	
+		valign:middle;		
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8MAT142 - Algèbre vectorielle et matricielle</title>
+	</HEAD>
+	<BODY>
+	<h1>Exercices de diagonalisation</h1>
+	
+	<ol>
+	<li><p>Calculer les valeurs propres et une matrice de passage pour les matrices suivantes :</p>
+	
+	<ol type ="a">
+	
+	<li> <!-- #a -->
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		-8 & 2  \\
+		7 & 5
+	\end{bmatrix}"/>
+	
+	<br><br>
+	<a href="javascript:toggle('toggleText1a');">Réponses</a>
+	<div id="toggleText1a" style="display:none">
+	Valeurs propres : <img valign=middle src="http://latex.codecogs.com/svg.latex?\{-9,6\}"/><br>
+	Les solutions sont respectivement :
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		-2k \\ k
+	\end{bmatrix}"/>
+	et 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		\frac{k}{7} \\ k
+	\end{bmatrix}"/><br>
+	
+	Matrice de passage : <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		-2 &  1 \\
+		1  & 7
+	\end{bmatrix}"/><br>
+	</div></li>
+	
+	<li> <!-- #b -->
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		-4 & 6  \\
+		2 & 0
+	\end{bmatrix}"/>
+	
+	<br><br>
+	<a href="javascript:toggle('toggleText1b');">Réponses</a>
+	<div id="toggleText1b" style="display:none">
+	Valeurs propres : <img valign=middle src="http://latex.codecogs.com/svg.latex?\{-6,2\}"/><br>
+	Les solutions sont respectivement :
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		-3k \\ k
+	\end{bmatrix}"/>
+	et 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		k \\ k
+	\end{bmatrix}"/><br>
+	
+	Matrice de passage : <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		-3 &  1 \\
+		1  & 1
+	\end{bmatrix}"/><br> 
+	</div></li>
+	
+	
+	<li> <!-- #c -->
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		1 & 4  \\
+		-1 & 5
+	\end{bmatrix}"/>
+	
+	<br><br>
+	<a href="javascript:toggle('toggleText1c');">Réponses</a>
+	<div id="toggleText1c" style="display:none">
+	Valeurs propres : <img valign=middle src="http://latex.codecogs.com/svg.latex?\{3\}"/><br> 
+	Cette matrice n'est pas diagonalisable, on ne peux construire deux vecteurs linéairement indépendant. 
+	</div></li>
+	
+	
+	<li> <!-- #d -->
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		1 & 0 & 0 \\
+		0 & 1 & 0 \\					
+		1 & -1 & 2
+	\end{bmatrix}"/>
+	
+	<br><br>
+	<a href="javascript:toggle('toggleText1');">Réponses</a>
+	<div id="toggleText1" style="display:none">
+	Valeurs propres : <img valign=middle src="http://latex.codecogs.com/svg.latex?\{1,2\}"/><br>
+	Les solutions sont respectivement :
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		k-l \\
+		k\\
+		l
+	\end{bmatrix}"/>  et 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		0 \\
+		0\\
+		k
+	\end{bmatrix}"/>.<br>
+	
+	Matrice de passage : <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		1 & 0 & 0 \\
+		1 & 1 & 0 \\ 
+		0 & 1 & 1 
+		\end{bmatrix}"/>, (il y en a d'autres)<br>
+	</div></li>
+	
+	
+	<li> <!-- #b -->
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		0 & 2 & -1 \\
+		3 & -2 & 0 \\					
+		-2 & 2 & 1
+	\end{bmatrix}"/>
+	
+	<br><br>
+	<a href="javascript:toggle('toggleText2');">Réponses</a>
+	<div id="toggleText2" style="display:none">
+	Valeurs propres : <img valign=middle src="http://latex.codecogs.com/svg.latex?\{1,2,-4\}"/><br>
+	Les solutions sont respectivement :
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		k \\
+		k\\
+		k
+	\end{bmatrix}"/>, 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{bmatrix}
+		-2k \\
+		\frac{-3k}{2}\\
+		k
+	\end{bmatrix}"/> et 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		k \\
+		\frac{-3k}{2}\\
+		k
+	\end{bmatrix}"/><br>
+	Matrice de passage : <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		1 & 4 & 2 \\
+		1 & 3 & -3 \\					
+		1 & -2 & 2
+		\end{bmatrix}"/><br>
+	</div></li>
+	
+	<li> <!-- #c -->
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		2 & -1 & 1 \\
+		1 & 0 & -1 \\ 					
+		2 & -2 & 1
+	\end{bmatrix}"/>
+	
+	<br>
+	<a href="javascript:toggle('toggleText3');">Réponses</a>
+	<div id="toggleText3" style="display:none">
+		Valeurs propre : <img valign=middle src="http://latex.codecogs.com/svg.latex?\{-1,1,3\}"/><br>
+		Les solutions sont respectivement :
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		k \\ k \\ 0
+	\end{bmatrix}"/>, 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{bmatrix}
+		0 \\ k \\ k
+	\end{bmatrix}"/> et 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		k \\ 0 \\ k
+	\end{bmatrix}"/><br>
+		Matrice de passage : <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		0 & 1 & 1 \\
+		1 & 1 & 0 \\					
+		1 & 0 & 1
+		\end{bmatrix}"/><br>
+	</div>
+	
+	</ol>
+	</BODY>
+</HTML>
+
+
+
+
+
+

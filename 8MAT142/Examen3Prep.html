@@ -1,0 +1,323 @@
+<HTML>
+	<HEAD>
+		<meta name="description" content="Révison algèbre vectoriel 3D">
+		<meta name="keywords" content="Nombre complexe, algèbre vectorielle, géométrie vectorielle, espace, 3D">
+		<meta name="author" content="Patrice Guérin">
+	<style>
+	table{
+		border-collapse: collapse;
+		border:1;
+	}
+
+	td,th {
+		padding-top: 5;
+		padding-bottom: 5;
+		padding-left: 10;
+		padding-right: 10;
+		text-align: center;	
+		valign:middle;		
+	}
+	li{
+		padding-top: 5;
+		padding-bottom: 5;
+		}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8MAT142 - Algèbre vectorielle et matricielle</title>
+	</HEAD>
+	<BODY>
+	<h1>Examen 3 : Préparation (Nombre complexe, algèbre et géométrie vectorielles dans l'espace)</h1>
+	
+
+	<ol> 
+	<li><!-- #1 -->
+	<p>Soit les vecteurs suivants : <br>
+	<ol><table><tr><td><img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\vec{u}=\begin{bmatrix}	-1 & -2 & -2 \end{bmatrix}"/></td>
+	<td><img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\vec{v}=\begin{bmatrix}	3 & 1 & -4 \end{bmatrix}"/></td>
+	<td><img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\vec{w}=\begin{bmatrix}	3 & -1 & 5 \end{bmatrix}"/></td></tr></table></ol>
+	
+	<ol type="a">
+	<li>Calculer, si possible,  <img src="http://latex.codecogs.com/svg.latex?\left(\vec{u}\times\vec{w}\right)\cdot \vec{v}"/>.</li>
+	<li>Calculer, si possible,  <img src="http://latex.codecogs.com/svg.latex?\left(\vec{u}\times\vec{w}\right) \vec{v}"/>.</li>
+	<li>Calculer, si possible,  <img src="http://latex.codecogs.com/svg.latex?\left(\vec{u}\cdot\vec{w}\right)\times \vec{v}"/>.</li>
+	<li>Calculer, si possible,  <img src="http://latex.codecogs.com/svg.latex?\left(\vec{u}\vec{w}\right)\cdot \vec{v}"/>.</li>
+	<li>Calculer, si possible,  <img src="http://latex.codecogs.com/svg.latex?\left(\vec{u}\times\vec{w}\right)\times \vec{v}"/>.</li>
+	<li>Calculer l'angle entre <img src="http://latex.codecogs.com/svg.latex?\vec{u}"/> et <img src="http://latex.codecogs.com/svg.latex?\vec{w}"/>.</li>
+	<li>Calculer <img src="http://latex.codecogs.com/svg.latex?\vec{w}_{\vec{u}}"/>.</li>
+	<li>Calculer <img src="http://latex.codecogs.com/svg.latex?\vec{u}_{\vec{w}}"/>.</li>
+	<li>Construire un vecteur unitaire <img src="http://latex.codecogs.com/svg.latex?\bot"/> à <img src="http://latex.codecogs.com/svg.latex?\vec{u}"/> et à <img src="http://latex.codecogs.com/svg.latex?\vec{w}"/>.</li>
+	<li>Démontrer que ces vecteurs forment une base de <img  src="http://latex.codecogs.com/svg.latex?\Re^3"/>.</li>
+	<li>Exprimer le vecteur <img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{z}=\begin{bmatrix}	-9 & 8 & -5 \end{bmatrix}"/>.
+	</ol>
+	</p>
+	<a href="javascript:toggle('toggleText1');">Réponses</a>
+	<div id="toggleText1" style="display:none">
+	<ol type="a">
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?-65"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\nexists "/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\nexists "/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\nexists "/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\begin{bmatrix}-3 & -27 & -9\end{bmatrix}		"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\arccos\left(\frac{-11}{\sqrt{9}\sqrt{35}}\right)=128,3^{\circ}"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{-11}{9}\begin{bmatrix}-1 & -2 & -2 \end{bmatrix}=\begin{bmatrix}\frac{11}{9} & \frac{22}{9} & \frac{22}{9} \end{bmatrix}"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{-11}{35}\begin{bmatrix}	3 & -1 & 5 \end{bmatrix}=\begin{bmatrix}\frac{-33}{35} & \frac{11}{35} & \frac{-11}{7} \end{bmatrix}"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{u}\times \vec{w}=\begin{bmatrix}-12 & -1 & 7 \end{bmatrix}"/> 
+		et <img valign=middle src="http://latex.codecogs.com/svg.latex?||\vec{u}\times \vec{w}||=\sqrt{194}"/>.<br>
+		On obtient donc <img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{1}{\sqrt{194}}
+		\begin{bmatrix}-12 & -1 & 7 \end{bmatrix}=\begin{bmatrix}\frac{-12}{\sqrt{194}} & -\frac{1}{\sqrt{194}} & \frac{7}{\sqrt{194}} \end{bmatrix}"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?-\frac{1}{\sqrt{194}}
+		\begin{bmatrix}-12 & -1 & 7 \end{bmatrix}=\begin{bmatrix}\frac{12}{\sqrt{194}} & \frac{1}{\sqrt{194}} & -\frac{7}{\sqrt{194}} \end{bmatrix}"/>.</li>
+		<li>
+		<p>Premier critère :linéairement indépendant (il faut vérifier la seule solution de 
+		<img src="http://latex.codecogs.com/svg.latex?a\vec{u}+b\vec{v}+c\vec{w}=\vec{0}"/> est <img valign=middle src="http://latex.codecogs.com/svg.latex?a=0,b=0,c=0"/>).<br>
+		Il faut résoudre le système : <img valign=middle src="http://latex.codecogs.com/svg.latex?\left\{\begin{align*} -a+3b+3c&=0 \\ -2a+b-c&=0 \\ -2a-4b+5c&=0 \end{align*}\right."/>.<br>
+		Ce système admet la solution <img valign=middle src="http://latex.codecogs.com/svg.latex?(0,0,0)"/> mais on doit démontrer que c'est la seule solution.  Or <img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{vmatrix} -1 & 3 & 3 \\ -2 & 1 & -1 \\ -2 & -4 & 5 \end{vmatrix}=65\neq 0"/>, donc la solution est unique.</p>
+		<p>	Deuxième critère : système générateur (il faut vérifier que <img valign=middle src="http://latex.codecogs.com/svg.latex?a\vec{u}+b\vec{v}+c\vec{w}=\vec{x}"/> admet au moins une solution).<br>
+		Il faut résoudre le système : <img valign=middle src="http://latex.codecogs.com/svg.latex?\left\{\begin{align*} -a+3b+3c&=x_1 \\ -2a+b-c&=x_2 \\ -2a-4b+5c&=x_3 \end{align*}\right."/>.<br>
+		Ce système a les mêmes coefficients que celui du critère précédant et ainsi la même matrice des coefficients et donc une solution unique.</p>
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\blacksquare"/>
+		</li>
+		<li>On résout <img valign=middle src="http://latex.codecogs.com/svg.latex?a\vec{u}+b\vec{v}+c\vec{w}=\vec{z}"/>.<br>
+		On obtient la matrice : <img valign=middle src="http://latex.codecogs.com/svg.latex?\left[\left.\begin{matrix}
+		-1 & 3  & 3\\ 
+		-2 & 1  & -1\\ 
+		-2 & -4  & 5
+		\end{matrix}\right|\begin{matrix}-9 \\ 8 \\ -5 \end{matrix}\right]
+		\sim \left[\left.\begin{matrix}
+		-1 & 3  & 3\\ 
+		0 & -5  & -7\\ 
+		0 & 0  & 13
+		\end{matrix}\right|\begin{matrix}-9 \\ 26 \\ -39 \end{matrix}\right]"/>
+		
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{z}=-3\vec{u}-\vec{v}-3\vec{w}"/>.
+	</ol>
+	</div></li>
+
+
+	<li><!-- #2 -->
+	<p>Vrai ou faux
+	<ol type="a">
+		<li>Le produit de deux nombres complexes n'est pas un nombre réel.</li>
+		<li>Deux vecteurs non nul de l'espace sont perpendiculaires si et seulement si leur produit scalaire est nul.</li>
+		<li>Il y a deux vecteurs unitaires perpendiculaires à une droite dans l'espace.</li>
+		<li>Un plan dans l'espace est définit parfaitement par deux points et un vecteur.</li>
+		<li>Un plan dans l'espace peut-être définit parfaitement par deux points et un vecteur.</li>
+	</ol></p>
+	
+	<a href="javascript:toggle('toggleText2');">Réponses</a>
+	<div id="toggleText2" style="display:none">
+	<ol type="a">
+		<li>Faux.  Par exemple, <img valign=middle src="http://latex.codecogs.com/svg.latex?i^2=-1"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?-1"/> est un nombre réel.</li>
+		<li>Vrai.  En effet : <img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{u}\cdot\vec{v}=\left\lVert \vec{u}\right\lVert\left\lVert\vec{v}\right\lVert cos(\theta)"/>.  Or si 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{u}\neq \vec{0}"/> et 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{v}\neq \vec{0}"/> alors <img valign=middle src="http://latex.codecogs.com/svg.latex?cos(\theta)=0"/> donc <img valign=middle src="http://latex.codecogs.com/svg.latex?\theta=90^\circ"/> et les vecteurs sont perpendiculaires.</li>
+		<li>Faux. il y en a une infinité.  En effet, pour une droite <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta:\begin{bmatrix}p_1 & p_2 & p_3\end{bmatrix} + k\begin{bmatrix}a & b & c\end{bmatrix}"/>, 
+		tous les vecteurs parallèles au plan <img valign=middle src="http://latex.codecogs.com/svg.latex?\pi:ax+by+cz=a p_1+b p_2+c p_3"/> sont perpendiculaires à la droite <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta"/>.</li>
+		<li>Faux. Si on a par exemple <img valign=middle src="http://latex.codecogs.com/svg.latex?A,B"/> et le vecteur <img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{u}"/>, il suffit que <img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{AB}\parallel\vec{u}"/>, et il n'y a pas un système générateur.</li>
+		<li>Vrai.  Si on a par exemple <img valign=middle src="http://latex.codecogs.com/svg.latex?A,B"/> et le vecteur <img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{u}"/>,  il faut que <img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{AB}\nparallel\vec{u}"/> </li>
+		
+	</ol>
+	
+	</div></li>
+		
+	<li><!-- #3 -->
+	<p>Soit les points 	
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?A\left(2, -1, 1\right)"/>, 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?B\left(4, 2, 4\right)"/>	et 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?C\left(-2, 3, z\right)"/>.  Trouver la valeur de <img valign=middle src="http://latex.codecogs.com/svg.latex?z"/> pour que le triangle ABC soit rectangle en B. (5 pts)</p>
+	<a href="javascript:toggle('toggleText3');">Réponses</a>
+	<div id="toggleText3" style="display:none">
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+	0	&=\overrightarrow{BA}\cdot\overrightarrow{BC} \\
+		&=	\begin{bmatrix}-2 & -3 & -3\end{bmatrix} 
+			\begin{bmatrix}-6 & 1 & z-4\end{bmatrix} \\
+		&= 12 -3 -3(z-4) \\
+		&= 9 -3z+12 \\
+		7 &=z \\
+	\end{align*}"/><br>
+	</div></li>	
+	
+	<li><!-- #4 -->
+	<p>Soit les nombres complexes suivants :
+	<table><tr>
+		<td><img valign=middle src="http://latex.codecogs.com/svg.latex?x=5"/></td>
+		<td><img valign=middle src="http://latex.codecogs.com/svg.latex?y=8i"/></td>
+		<td><img valign=middle src="http://latex.codecogs.com/svg.latex?z=4-6i "/></td>
+		<td><img valign=middle src="http://latex.codecogs.com/svg.latex?w=-2+4i "/></td>
+		</tr></table>
+	<p>Effectuer les opérations suivantes dans <img valign=middle src="http://latex.codecogs.com/svg.latex?\mathbb{C}"/></p>
+	<ol type="a">
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{z}{x}="/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{z}{y}="/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?z\times w="/></li>
+		
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?z\div w="/></li>		
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?z\times (x+y)="/></li>
+		<li><img src="http://latex.codecogs.com/svg.latex?z^3="/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?(x+y)\div z="/></li>
+	</ol></p>
+	<a href="javascript:toggle('toggleText4');">Réponses</a>
+	<div id="toggleText4" style="display:none">
+	<ol type="a">
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{z}{x}=\frac{4}{5}-\frac{6}{5}i"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{z}{y}=-\frac{3}{4}-\frac{1}{2}i"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?z\times w=16+28i"/></li>
+		
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?z\div w=-\frac{8}{5}-\frac{1}{5}i"/></li>			
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?z\times (x+y)=68+2i"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?z^3=-368-72i"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?(x+y)\div z=-\frac{7}{13}+\frac{31}{26}i"/>
+	<ol>
+	</div></li>	
+	
+	<li><!-- #5 -->
+	<p>Soit les nombres complexes suivants :
+	<table><tr>
+	<td><img valign=middle src="http://latex.codecogs.com/svg.latex?	x=12\,cis\left(150^{\circ}\right)"/></td>
+	<td><img valign=middle src="http://latex.codecogs.com/svg.latex?	y=4\,cis\left(30^{\circ}\right)"/></td>
+	<td><img valign=middle src="http://latex.codecogs.com/svg.latex?	z=6\,cis\left(300^{\circ}\right)"/></td>
+	</tr></table>
+	<ol type="a">
+		<li>Calculer <img valign=middle src="http://latex.codecogs.com/svg.latex?
+		x\times y"/>.</li> 
+		<li>Calculer <img valign=middle src="http://latex.codecogs.com/svg.latex?
+		y%5Cdiv z"/>. </li>
+		<li>Calculer <img valign=middle src="http://latex.codecogs.com/svg.latex?
+		%5Cfrac%7Bx%7D%7By\times z%7D"/>. </li>
+	</ol>
+	</p>
+	<a href="javascript:toggle('toggleText5');">Réponses</a> 
+	<div id="toggleText5" style="display:none">
+	<ol>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?48\,cis\left(180^{\circ}\right)"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{2}{3}\,cis\left(90^{\circ}\right)"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{1}{2}\,cis\left(180^{\circ}\right)"/></li>
+	</ol>
+	</div></li>
+	
+	<li><!-- #6 -->
+	<p>Trouver les 4 racines <img src="http://latex.codecogs.com/svg.latex?4^{me}"/> de <img valign=middle src="http://latex.codecogs.com/svg.latex?z=16\, cis\left(\frac{\pi}{3}\right)"/> et représenter le plan d'Argand.</p>
+	
+	<a href="javascript:toggle('toggleText6');">Réponses</a>
+	<div id="toggleText6" style="display:none">
+	<ul>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?w_0=2\,cis\left(\frac{\pi}{12}\right)"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?w_1=2\,cis\left(\frac{7\pi}{12}\right)"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?w_2=2\,cis\left(\frac{13\pi}{12}\right)"/></li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?w_3=2\,cis\left(\frac{19\pi}{12}\right)"/></li>
+	</ul>
+	<img src="Examen3Prep_Q6.jpg"\>
+	</div></li>
+	
+	<li><!-- #7 -->
+	<p>Évaluer <img valign=middle src="http://latex.codecogs.com/svg.latex?\left(1-i\right)^{20}"/>.</p>
+	<a href="javascript:toggle('toggleText7');">Réponses</a>
+	<div id="toggleText7" style="display:none">
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+		\left(1-i\right)^{20} 	&= \left[\sqrt{2}\,cis\left(\frac{7\pi}{4}\right)\right]^{20} \\
+								&= \left(\sqrt{2}\right)^{20}\,cis \left(\frac{140pi}{4}\right) \\
+								&= 1024\,cis\left(35\pi\right) \\
+								&= 1024\,cis\left(\pi\right) \\
+								&= 1024\left(\cos(\pi) + i \sin(\pi) \right) \\
+								&= 1024\left(-1 + i \cdot 0 \right) \\
+								&= -1024								
+	\end{align*}"/>
+	</div></li>
+	
+	<li><!-- #8 -->
+	<p>Trouver une équation vectorielle de la droite <img src="http://latex.codecogs.com/svg.latex?\Delta"/> perpendiculaire au plan 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\pi:2x+4y-z=5
+	"/> passant par le point <img valign=middle src="http://latex.codecogs.com/svg.latex?A%5Cleft(1, 2, 5%5Cright)"/>.</p>
+	<a href="javascript:toggle('toggleText8');">Réponses</a>
+	<div id="toggleText8" style="display:none">
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\Delta:	\begin{bmatrix}	x & y & z \end{bmatrix}=
+				\begin{bmatrix}	1 & 2 & 5 \end{bmatrix} +
+				k\begin{bmatrix}	2 & 4 & -1 \end{bmatrix}"/>
+	</div></li>
+	
+		<li><!-- #9 -->
+	<p>Trouver une équation cartésienne du plan <img valign=middle src="http://latex.codecogs.com/svg.latex?\pi_1"/> passant par le point <img valign=middle src="http://latex.codecogs.com/svg.latex?B\left(-3,2,-4\right) "/> et qui est perpendiculaire à la fois au plan <img valign=middle src="http://latex.codecogs.com/svg.latex?\pi_2:x+y+z =3"/> et au plan 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\pi_3:-2x+3y= 6"/>.    </p>
+	<a href="javascript:toggle('toggleText9');">Réponses</a>
+	<div id="toggleText9" style="display:none">
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{n_1}\times \vec{n_2}=\begin{bmatrix}	1 & 1 & 1 \end{bmatrix}\times \begin{bmatrix}	-2 & 3 & 0 \end{bmatrix}=\begin{bmatrix}	-3 & -2 & 5 \end{bmatrix}"/>.<br><br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?-3(-3)-2(2)+5(-4)=-15"/>.<br><br>
+	Et on obtient : <img valign=middle src="http://latex.codecogs.com/svg.latex?\pi_{1}:-3x-2y+5z=-15"/>
+	</div></li>
+	
+	<li><!-- #10 -->
+	<p>Trouver une équation cartésienne du plan <img valign=middle src="http://latex.codecogs.com/svg.latex?\pi"/> qui passe pas les points
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?P\left( 3, -2, 5\right)"/>,
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?Q\left( -2, 4, 3\right)"/>,
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?R\left( 1, 1, 1\right)"/>,
+	</p>
+	<a href="javascript:toggle('toggleText10');">Réponses</a>
+	<div id="toggleText10" style="display:none">
+	Il nous faut deux vecteur du plan, disons <img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{PQ}=\begin{bmatrix}	-5 & 6 & -2 \end{bmatrix}"/> et 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{PR}=\begin{bmatrix}	-2 & 3 & -4 \end{bmatrix}"/>.<br><br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{n}=\vec{PQ}\times \vec{PR}=\begin{bmatrix}	-18 & -16 & -3 \end{bmatrix}"/>.  Prenons <img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{n}=\begin{bmatrix}	18 & 16 & 3 \end{bmatrix}"/>, c'est plus élégant.<br><br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?18(1)+16(1)+3(1)=37"/> et on obtient : <img valign=middle src="http://latex.codecogs.com/svg.latex?\pi:+18x+16y+3z= 37"/>
+	</div></li>
+	
+	<li><!-- #11 -->
+	<p>Calculer le point <img valign=middle src="http://latex.codecogs.com/svg.latex?R"/> de la droite <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\Delta:		\begin{bmatrix}	x & y & z \end{bmatrix}=
+				\begin{bmatrix}	2 & -1 & 3 \end{bmatrix} +
+			   k\begin{bmatrix}	-2 & 1 & -6 \end{bmatrix}"/> le plus près du point 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?Q(-4,1,2)"/> et calculer la distance entre ce point et <img valign=middle src="http://latex.codecogs.com/svg.latex?Q"/>.</p>
+	<a href="javascript:toggle('toggleText11');">Réponses</a>
+	<div id="toggleText11" style="display:none">
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{OR}=\vec{OP}+\vec{PR}"/><br><br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{PR}=\vec{PQ}_{\vec{d}}=\frac{\begin{bmatrix} -6 & 2 & -1 \end{bmatrix}\cdot \begin{bmatrix} -2 & 1 & -6 \end{bmatrix}}{\begin{bmatrix} -2 & 1 & -6 \end{bmatrix}\cdot \begin{bmatrix} -2 & 1 & -6 \end{bmatrix}}\begin{bmatrix} -2 & 1 & -6 \end{bmatrix}"/>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?=\frac{20}{41}\begin{bmatrix} -2 & 1 & -6 \end{bmatrix}"/><br><br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{OR}=\begin{bmatrix}2  & -1  & 3 \end{bmatrix}+\frac{20}{41}\begin{bmatrix} -2 & 1 & -6 \end{bmatrix}=\begin{bmatrix} \frac{42}{41} & \frac{-21}{41} & \frac{3}{41} \end{bmatrix}"/><br><br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?d=\sqrt{\left(-4-\frac{42}{41}\right)^2 + \left(1-\frac{-21}{41}\right)^2 + \left(2-\frac{3}{41}\right)^2}=\frac{52\,521}{41}=\frac{\sqrt{1281}}{\sqrt{41}"/>
+	</div></li>
+	
+	<li><!-- #12 -->
+	<p>Soit les trois droites suivantes :
+	<ul>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_1:		\begin{bmatrix}	x & y & z \end{bmatrix}=
+				\begin{bmatrix}	1 & 1 & 2 \end{bmatrix} +
+			   k_1\begin{bmatrix}	-1 & 3 & 5 \end{bmatrix}"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_2:		\begin{bmatrix}	x & y & z \end{bmatrix}=
+				\begin{bmatrix}	-5 & -1 & 0 \end{bmatrix} +
+			   k_2\begin{bmatrix}	1 & 2 & 3 \end{bmatrix}"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_3:		\begin{bmatrix}	x & y & z \end{bmatrix}=
+				\begin{bmatrix}	4 & 3 & -1 \end{bmatrix} +
+			   k_3\begin{bmatrix}	2 & -6 & -10 \end{bmatrix}"/></li>
+		</ul>
+	Déterminer la position relative de ces trois droites.</p>
+	<a href="javascript:toggle('toggleText12');">Réponses</a>
+	<div id="toggleText12" style="display:none">
+	<ul>
+	<li>Les droite <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_1"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_3"/> sont parallèles distinctes.  Elles sont distantes de <img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{\sqrt{1314}}{\sqrt{35}}"/>.</li>
+	<li>Les droites <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_1"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_2"/> sont concourantes.  Elles se croisent au point <img valign=middle src="http://latex.codecogs.com/svg.latex?(-1,7,12)"/> lorsque <img valign=middle src="http://latex.codecogs.com/svg.latex?k_1=2"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?k_2=4"/>.</li>
+	<li>Les droites <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_2"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_3"/> sont gauches. <!-- Le plan construit à partir de ces droites et passant pas le point <img valign=middle src="http://latex.codecogs.com/svg.latex?(-5,-1,0)"/> est <img valign=middle src="http://latex.codecogs.com/svg.latex?\pi:-x+8y-5z=-3"/>.  La distance entre les droites est de <img valign=middle src="http://latex.codecogs.com/svg.latex?\frac{14\sqrt{10}}{15}"/ -->.
+	</ul>
+	</div></li>
+	</ol>
+	</BODY>
+</HTML>
+
+
+
+
+
+

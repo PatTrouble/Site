@@ -1,0 +1,470 @@
+<HTML>
+	<HEAD>
+		<meta name="description" content="Révison système d'équation linéaire">
+		<meta name="keywords" content="Résolution de systèmes d'équations,  vecteur du plan, droite du plan">
+		<meta name="author" content="Patrice Guérin">	
+	<style>
+	table{
+		border-collapse: collapse;;
+		border:1;
+	}
+
+	td,th {
+		padding-top: 5;
+		padding-bottom: 5;
+		padding-left: 10;
+		padding-right: 10;
+		text-align: center;	
+		valign:middle;		
+	}
+	li{
+		padding-top: 5;
+		padding-bottom: 5;
+		}
+	</style>
+<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8MAT142 - Algèbre vectorielle et matricielle</title>
+	</HEAD>
+	<BODY>
+	<h1>Examen 2 : Préparation</h1>
+	<h2>Résolution de systèmes d'équations,  vecteur du plan et droite du plan</h2>
+	
+
+	<ol> 
+	<li><!-- #1 (7/5, 3, 17/5)-->
+	<p>Soit le système d'équations suivant :
+	<p><img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\left\{\begin{matrix}
+	2x&+	&3y&-	&2z	&=&5  \\ 
+	4x&-	&2y&+	&z	&=&3  \\
+	4x&-	&4y&+	&z	&=&-3
+	\end{matrix}\right."/></p>
+	Résoudre ce système en utilisant la méthode de Cramer.</p>
+	<a href="javascript:toggle('toggleText1');">Réponses</a>
+	<div id="toggleText1" style="display:none">
+	<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta=20,\Delta_x=28,\Delta_y=60,\Delta_z=68"/> <br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?x=\frac{7}{5},y=3,z=\frac{17}{5}"/> </p>
+	</div></li>
+	
+	<li> <!--   #2	-->
+		<p>Soit le système d'équations suivant :
+		<p><img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\left\{\begin{matrix}
+		 x	&-&	2y	&+&	2z	&=&	5  \\ 
+		3x	&+&	2y	&-&	z	&=&	-3  \\
+		5x	&-&	2y	&+&	3z	&=&	5
+		\end{matrix}\right."/>
+		</p>
+		Résoudre ce systeme en utilisant la méthode d'élimination Gaussienne.</p>
+		<a href="javascript:toggle('toggleText2');">Réponses</a>
+		<div id="toggleText2" style="display:none">
+		<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\left[ \left.\begin{matrix}
+				1 & -2 & 2  & \\
+				3 & 2 & -1  & L_2-3L_1 \\
+				5 & -2 & 3   &L_3-5L_1\\
+			\end{matrix}\right|\begin{matrix}5 \\ -3 \\ 5\end{matrix}\right ]
+			\begin{matrix}\\
+				L_2-3L_1 \\
+				L_3-5L_1\end{matrix}
+			"/>
+			</p>
+		<p><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\left[ \left.\begin{matrix}
+			1 & -2 & 2   &\\
+			0 & 8 & -7   &\\
+			0 & 8 & -7  & \\
+			\end{matrix}\right|\begin{matrix}5 \\ -18 \\ -20\end{matrix}\right ]
+			\begin{matrix}\\  \\
+				L_3-L_2\end{matrix}"/></p>
+		<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\left[ \left.\begin{matrix}
+			1 & -2 & 2   \\
+			0 & 8 & -7   \\
+			0 & 0 & 0  \\
+			\end{matrix}\right|\begin{matrix}5 \\ -18 \\ -2\end{matrix}\right ]"/></p>
+			Aucune solution.
+		</div></li>
+	
+	
+	<li> <!--   #3	-->
+	<p>Pour un voyage, un autobus part à 9h00 et un autre à 10h00.  Le premier voyage à 90km/h et le second à 110km/h.  À quelle distance du départ, le second autobus 
+	doublera le premier ?</p>
+	<a href="javascript:toggle('toggleText3');">Réponses</a>
+	<div id="toggleText3" style="display:none">
+		<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+			d_1 : & \text{ nombre de km parcouru par l'autobus } 1 \\
+			d_2 : & \text{ nombre de km parcouru par l'autobus } 2  \\
+			d_3 : & \text{ nombre d'heures depuis le d\'epart de l'autobus 1 } \\
+		\end{align*}"/></p>
+		<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+			d_1 &= 90 \times t \\
+			d_2 &= 110 \times (t-1) \\
+			d_1 &= d_2
+		\end{align*}"/></p>
+		<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\left[\left.\begin{matrix}
+			1 & 0 & -90 \\
+			0 & 1 & -110 \\
+			1 & -1 & 0
+		\end{matrix}\right|
+		\begin{matrix} 0 \\ -110 \\ 0\end{matrix}\right]"/></p>
+		<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\left[\left.\begin{matrix}
+			1 & 0 & -90 \\
+			0 & 1 & -110 \\
+			0 & 0 & 200
+		\end{matrix}\right|
+		\begin{matrix} 0 \\ -110 \\ 110\end{matrix}\right]"/> (une fois la matrice échelonnée)</p>
+		<p>
+			<img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+				t &= \frac{11}{2}=5h30 \\
+				d_1 &= 495\,km \\
+				d_2 &= 495\,km
+			\end{align*}"/></p>
+		<p>L'autobus 2 effectue un dépassement 495 km après le départ.</p>
+	</div></li>
+	
+	<li> <!--   #4	-->
+	<p>Soit le système d'équations suivant :
+	<p><img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\left\{\begin{matrix}
+	x	&-&	2	y	&-&	2z	&+&	3w	&=&	1	\\
+	2x	&-&	5	y	&+&	2z	&+&	3w	&=&	-2	\\
+	-8x	&+&	13	y	&+&	7z	&-&	6w	&=&	7	\\
+	-4x	&+&	4	y	&+&	5z	&+&	3w	&=&	7
+	\end{matrix}\right."/>
+	</p>
+	
+	Résoudre ce système en utilisant la méthode d'élimination Gaussienne.</p>
+	<a href="javascript:toggle('toggleText4');">Réponses</a>
+	<div id="toggleText4" style="display:none">
+	<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\left[ \left.\begin{matrix}
+		1 & -2 & -2 & 3  \\
+		2 & -5 & 2 & 3  \\
+		-8 & 13 & 7 & -6  \\
+		-4 & 4 & 5 & 3  \\
+		\end{matrix}\right|\begin{matrix}1 \\ -2 \\ 7 \\ 7\end{matrix}\right ]"/></p>
+	<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\left[ \left.\begin{matrix}
+		1 & -2 & -2 & 3  \\
+		0 & -1 & 6 & -3  \\
+		0 & -3 & -9 & 18  \\
+		0 & -4 & -3 & 15  \\
+		\end{matrix}\right|\begin{matrix}1 \\ -4 \\ 15 \\ 11\end{matrix}\right ]
+		"/></p>
+	<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\left[ \left.\begin{matrix}
+		1 & -2 & -2 & 3  \\
+		0 & -1 & 6 & -3  \\
+		0 & 0 & -27 & 27  \\
+		0 & 0 & -27 & 27  \\
+		\end{matrix}\right|\begin{matrix}1 \\ -4 \\ 27 \\ 27\end{matrix}\right ]
+		"/></p>
+	<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\left[ \left.\begin{matrix}
+		1 & -2 & -2 & 3  \\
+		0 & -1 & 6 & -3  \\
+		0 & 0 & -27 & 27  \\
+		0 & 0 & 0 & 0  \\
+		\end{matrix}\right|\begin{matrix}1 \\ -4 \\ 27 \\ 0\end{matrix}\right ]
+		"/></p>
+	<p>Infinité de solution, posons <img src="http://latex.codecogs.com/svg.latex?w=k"/>.</p>
+	<p><img valign=middle src="http://latex.codecogs.com/svg.latex?\underline{\begin{align*}
+		-27z+27k	&=27 \\
+			-27z	&=27-27k \\
+			z		&=-1+k 			
+	\end{align}}"/><br><br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\underline{\begin{align*}
+		-y+6(-1+k)-3k	&=-4 \\
+		-y-6+6k-3k 	&=-4 \\ 
+		 	-2+3k	&=y  
+	\end{align}}"/><br><br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\underline{\begin{align*}
+		x - 2(-2+3k)-2(-1+k)+3k &=1 \\
+		x + 4 - 6k + 2 - 2k + 3k&=1 \\
+		x &= -5+5k 
+	\end{align}}"/><br><br>
+	Réponse : <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		5k-5	&	3k-2	&	k-1	&	k
+	\end{bmatrix}^t"/>
+	</div></li>
+	
+	<li> <!-- #5 	-->
+	<p>Calculer l'inverse de la matrice <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	A=\begin{bmatrix}
+	4	& 	16	&	-9	\\
+	-1	&	-3	&	2	\\
+	2	&	9	&	-5
+	\end{bmatrix}"/> en utilisant la méthode de Gauss-Jordan.</p>
+	<a href="javascript:toggle('toggleText5');">Réponses</a>
+	<div id="toggleText5" style="display:none">
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		A^{-1}=\begin{bmatrix}
+		3	&	&	1	&	-5	\\
+		1	&	&	2	&	-1	\\
+		3	&	&	4	&	-4
+		\end{bmatrix}"/>
+	</div></li>
+		
+	<!--<li>  #6	old
+	<p>Soit la situation en équilibre suivantes :<br>
+	<ol><img src="Examen2PrepQ6.jpg"/></ol>
+	Calculer la tension dans chacun des cables.</p>
+	<a href="javascript:toggle('toggleText6');">Réponses</a>
+	<div id="toggleText6" style="display:none">
+		La tension dans le plus long cable est de <img valign=middle src="http://latex.codecogs.com/svg.latex?36,6N"/> et la tension dans l'autre est de 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?44,8N"/>
+	</div></li>-->
+	
+	<li> <!-- #6 	-->
+	<p>Calculer le poids maximal en <img valign=middle src="http://latex.codecogs.com/svg.latex?kN"/> que la grue à cable représentée sur le dessin suivant peut tenir à <img src="http://latex.codecogs.com/svg.latex?70^\circ"/> d'angle avec la verticale.    :<br>
+	<ol><img src="Examen2PrepQ6.jpg"/></ol>
+	<a href="javascript:toggle('toggleText6');">Réponses</a>
+	<div id="toggleText6" style="display:none">
+	Diagramme des forces :
+	<ol><img src="Examen2PrepQ6Rep.jpg"/></ol>
+	On obtient le système suivant :<br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\left\{\begin{matrix}
+		\left\| \vec{T} \right\|cos 160^\circ + \left\| \vec{P} \right\| cos 270^\circ + 10 cos 0^\circ &= 0 \\
+		\left\| \vec{T} \right\|sin 160^\circ + \left\| \vec{P} \right\| sin 270^\circ + 10 sin 0^\circ &= 0 
+	\end{matrix}\right."/><br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\left\{\begin{matrix}
+		\left\| \vec{T} \right\|cos 160^\circ + 10 &= 0 \\
+		\left\| \vec{T} \right\|sin 160^\circ -\left\| \vec{P} \right\| + &= 0 
+	\end{matrix}\right."/>
+	et ainsi <img valign=middle src="http://latex.codecogs.com/svg.latex?\left\| \vec{T} \right\|=10,64kN"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?\left\| \vec{P} \right\|=3,64kN"/>.  Le poids maximal est de <img valign=middle src="http://latex.codecogs.com/svg.latex?3,64kN"/>.
+	</div></li>
+	
+	<!-- #7	-->	
+<!--	<li> 
+	<p>Soit la matrice <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	A=\begin{bmatrix}
+	2	&	4	\\
+	1	&	5	
+	\end{bmatrix}"/>.
+	<ol type="a">
+		<li>Calculer la matrice de passage qui diagonalise <img src="http://latex.codecogs.com/svg.latex?A"/></li>
+		<li>Calculer la matrice diagonale <img src="http://latex.codecogs.com/svg.latex?D"/> obtenue.</li>
+		<li>Évaluer <img  src="http://latex.codecogs.com/svg.latex?A^{5}"/>.</li>
+	</ol>
+	</p>
+	<a href="javascript:toggle('toggleText7');">Réponses</a>
+	<div id="toggleText7" style="display:none">
+	<ol type="a">
+	<li>Polynôme caractéristique :<br> 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{align*}
+		(2-\lambda)(5-lambda)-4 &=0 \\
+		10-7\lambda+\lambda^2-4&=0	\\
+		\lambda^2-7\lambda+6 &= 0 \\
+		(\lambda-6)(\lambda-1)&=0
+	\end{align*}"/><br>
+	et ainsi <img src="http://latex.codecogs.com/svg.latex?\lambda=6"/> ou 
+	<img src="http://latex.codecogs.com/svg.latex?\lambda=1"/><br>
+	<br>
+	Pour la valeur propre <img src="http://latex.codecogs.com/svg.latex?6"/> on a :<br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		-4	&	4 \\
+		1	&	-1 \\
+	\end{bmatrix}"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	X=\begin{bmatrix}k & k \end{bmatrix}^t"/>, prenons donc le vecteur propre <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	X=\begin{bmatrix}1 & 1 \end{bmatrix}^t"/>.<br><br>
+	Pour la valeur propre <img src="http://latex.codecogs.com/svg.latex?-1"/> on a:<br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		1	&	4 \\
+		1	&	4 \\
+	\end{bmatrix}"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	X=\begin{bmatrix}-4k & k \end{bmatrix}^t"/>, prenons donc le vecteur propre <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	X=\begin{bmatrix}-4 & 1 \end{bmatrix}^t"/>.<br>
+	On obtient ainsi comme matrice de passage <img valign=middle src="http://latex.codecogs.com/svg.latex?P=\begin{bmatrix}
+		1	&	-4 \\
+		1	&	1
+	\end{bmatrix}"/>
+	</li>
+	<li><img valign=middle src="http://latex.codecogs.com/svg.latex?D=\begin{bmatrix}
+		6	&	0 \\
+		0	&	1
+	\end{bmatrix}
+	"/></li>
+	<li>On a <img valign=middle src="http://latex.codecogs.com/svg.latex?P^{-1}=
+	\frac{1}{5}\begin{bmatrix}
+		1	&	4 \\
+		-1	&	1
+	\end{bmatrix}"/>.  On veut calculer :<br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?A^{5}=(PDP^{-1})^5=PD^5P^{-1}=
+	\begin{bmatrix}
+	1556	&	6220	\\
+	1555	&	6221
+	\end{bmatrix}"/>.</li>
+	</ol>
+	</div></li>-->
+	
+	<li> <!-- #8	-->
+	<p>Soit les vecteurs 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\overrightarrow{u}=\begin{bmatrix}3&-2\end{bmatrix}"/>, 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\overrightarrow{v}=\begin{bmatrix}7&-9\end{bmatrix}"/>, 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\overrightarrow{w}=\begin{bmatrix}2&4\end{bmatrix}"/>
+	</p>
+	<ol type="a">
+		<li>Calculer <img src="http://latex.codecogs.com/svg.latex?\overrightarrow{u}\cdot 2\overrightarrow{v}"/></li>
+		<li>Calculer l'angle entre <img src="http://latex.codecogs.com/svg.latex?\overrightarrow{u}"/> et <img src="http://latex.codecogs.com/svg.latex?\overrightarrow{v}"/>.</li>
+		<li>Calculer <img src="http://latex.codecogs.com/svg.latex?\overrightarrow{u}\cdot\overrightarrow{v}\cdot\overrightarrow{w}"/></li>
+		<li>Calculer <img valign=middle src="http://latex.codecogs.com/svg.latex?\overrightarrow{u}\cdot (2\overrightarrow{v}-3\overrightarrow{w})"/></li>
+		<li>Calculer <img src="http://latex.codecogs.com/svg.latex?\overrightarrow{u}_{\overrightarrow{v}}"/>
+		<li>Exprimer <img src="http://latex.codecogs.com/svg.latex?\overrightarrow{w}"/> comme une combinaison linéaire des vecteurs <img src="http://latex.codecogs.com/svg.latex?\overrightarrow{u}"/> et <img src="http://latex.codecogs.com/svg.latex?\overrightarrow{v}"/>.
+	</ol>
+	<a href="javascript:toggle('toggleText8');">Réponses</a>
+	<div id="toggleText8" style="display:none">
+	<ol type="a">
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?78"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?18,4^\circ"/></li>
+		<li>Ça n'existe pas, <img src="http://latex.codecogs.com/svg.latex?
+		\overrightarrow{u}\cdot \overrightarrow{v}"/> est un scalaire.</li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?84"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\frac{39}{130}\begin{bmatrix}7 & -9 \end{bmatrix}=
+		\begin{bmatrix}\frac{273}{130} & \frac{-351}{130} \end{bmatrix}=
+		\begin{bmatrix}\frac{21}{10} & \frac{-27}{10} \end{bmatrix}"/></li>
+		<li>On résout le système <img src="http://latex.codecogs.com/svg.latex?a\vec{u}+b\vec{v}=\vec{w}"/> en <img  src="http://latex.codecogs.com/svg.latex?a"/> et <img src="http://latex.codecogs.com/svg.latex?b"/>.  On obtient : <img valign=middle src="http://latex.codecogs.com/svg.latex?\overrightarrow{w}=\frac{46}{13}\overrightarrow{u}-\frac{16}{13}\overrightarrow{v}"/></li>
+	</ol>
+	</div></li>
+	
+	<li> <!-- #9	-->
+	<p>Construire deux vecteurs unitaires perpendiculaire au vecteur <img valign=middle src="http://latex.codecogs.com/svg.latex?\overrightarrow{u}=\begin{bmatrix}4 & -3\end{bmatrix}"/>.
+	</p>
+	<a href="javascript:toggle('toggleText9');">Réponses</a>
+	<div id="toggleText9" style="display:none">
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\overrightarrow{u_1}=
+		\begin{bmatrix}\frac{3}{5} & \frac{4}{5}\end{bmatrix}"/> et
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\overrightarrow{u_2}=
+		\begin{bmatrix}-\frac{3}{5} & -\frac{4}{5}\end{bmatrix}"/>		
+	</div></li>
+	
+	<li> <!-- #10	-->
+	<p>Soit la droite <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta"/> qui passe par les points <img valign=middle src="http://latex.codecogs.com/svg.latex?(2,-3)"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?(4,-9)"/>.</p>
+	<ol type="a">
+		<li>Écrire une équation vectorielle pour la droite <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta"/>.
+		<li>Écrire une équation cartésienne pour la droite <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta"/>. </li>
+		<li>Écrire une équation paramétrique pour la droite  <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta"/>.</li>
+		<li>Écrire une équation symétrique pour la droite  <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta"/>.</li>
+	</ol>
+	<a href="javascript:toggle('toggleTexta');">Réponses</a>
+	<div id="toggleTexta" style="display:none">
+		<ol type="a">
+			<li><br><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\begin{align*}
+			\text{Avec : }& \\
+				&\overrightarrow{d}=\begin{bmatrix}4-2 & -9--3\end{bmatrix}=\begin{bmatrix}2 & -6 \end{bmatrix} \\ 
+			\text{On a :}& \\
+				&\Delta:\begin{bmatrix}x & y \end{bmatrix}=\begin{bmatrix}2 & -3 \end{bmatrix}+
+				k\begin{bmatrix}2 & -6\end{bmatrix},k\in\mathbb{R}
+			\end{align*}"/></li>
+			<li><br><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\begin{align*}
+			\text{Avec : }& \\
+				&\overrightarrow{n}=\begin{bmatrix}6 & 2 \end{bmatrix}\\
+				& 6\times 2 + 2\times -3=6 \\
+			\text{On a :}& \\
+			&\Delta:6x+2y=6
+			\end{align*}"/></li>
+			<li><br><img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta:"/>
+			<img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\begin{align*}
+				x &= 2+2k \\
+				y &= -3 -6k
+			\end{align*}"/><img valign=middle src="http://latex.codecogs.com/svg.latex?,k\in\mathbb{R}"/></li>
+			<li><br>
+			<img valign=middle src="http://latex.codecogs.com/svg.latex?
+				\Delta:\frac{x-2}{2}=\frac{y+3}{-6}"/></li>
+		</ol>
+	</div></li>
+	
+	<!-- #11	-->
+	<li>Déterminer la position relative des droites suivantes :
+	<ul>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_1:
+		\begin{bmatrix}x & y\end{bmatrix}=\begin{bmatrix}-4 & 8\end{bmatrix}+r\begin{bmatrix}2 & -1\end{bmatrix},r\in\mathbb{R}"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_2:
+		\begin{bmatrix}x & y\end{bmatrix}=\begin{bmatrix}-4 & 3\end{bmatrix}+s\begin{bmatrix}-2 & -4\end{bmatrix},s\in\mathbb{R}"/></li>
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta_3:\frac{x-7}{2}=\frac{y-10}{4}"/></li>
+	</ul>
+	<a href="javascript:toggle('toggleTextg');">Réponses</a>
+	<div id="toggleTextg" style="display:none">
+		Schéma : <br><img width=50% src="Examen2PrepQ10.jpg"/>
+		<p>On a : <img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{d_1}=\begin{bmatrix}2 & -1\end{bmatrix},\vec{d_2}=\begin{bmatrix}-2 & -4\end{bmatrix},\vec{d_3}=\begin{bmatrix}2 & 4\end{bmatrix}"/>.</p>
+		<p>Donc <img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+			\Delta_2\parallel \Delta_3, & \text{ Distance :}\sqrt{45} \\
+			\Delta_1\perp \Delta_2,  & \text{ Pt. rencontre}=(-2,7) \\
+			\Delta_1\perp \Delta_3, & \text{ Pt. rencontre}=(4,4)
+			\end{align*}"/>.</p>
+	</div>
+	</li>
+	
+	<!-- #12	-->
+	<li><p>Calculer le point de la droite <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta:x-2y=6"/> le plus près du point 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?P(-1,4)"/> en utilisant une  projection orthogonale sur une normale.	
+	</p>
+	<a href="javascript:toggle('toggleTextb');">Réponses</a>
+	<div id="toggleTextb" style="display:none">
+	Schéma : <br><img width=33% src="Examen2PrepQ11.jpg"/><br>
+	Nommons <img valign=middle src="http://latex.codecogs.com/svg.latex?R"/> le pt de <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta"/> le plus près de <img valign=middle src="http://latex.codecogs.com/svg.latex?P(-1,4)"/> et prenons <img valign=middle src="http://latex.codecogs.com/svg.latex? X(6,0)"/>.<br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\begin{align*}
+			\overrightarrow{PX}&=\begin{bmatrix}6--1 & 0-4 \end{bmatrix}=
+								\begin{bmatrix}7 & -4 \end{bmatrix} \\
+			\overrightarrow{PR}&=\overrightarrow{PX}_{\overrightarrow{n}} \\
+				&=\frac{\begin{bmatrix}7 & -4\end{bmatrix}\cdot
+					\begin{bmatrix}1 & -2 \end{bmatrix}}
+					{\begin{bmatrix}1 & -2 \end{bmatrix}\cdot \begin{bmatrix}1 & -2 \end{bmatrix}}
+					\begin{bmatrix}1 & -2 \end{bmatrix} \\
+				&=\frac{15}{5}\begin{bmatrix}1 & -2 \end{bmatrix} \\
+				&=\begin{bmatrix}3 & -6 \end{bmatrix}\\
+		\overrightarrow{OR}&=\overrightarrow{OP}+\overrightarrow{PR} \\
+				&=\begin{bmatrix}-1 & 4 \end{bmatrix} + \begin{bmatrix}3 & -6 \end{bmatrix} \\
+				&=\begin{bmatrix}2 & -2 \end{bmatrix} \\
+		\end{align*}"/><br>
+		Et ainsi, on obtient <img valign=middle src="http://latex.codecogs.com/svg.latex?R(-2,2)."/>
+	</div></li>
+	
+	<li> <!-- #13	-->
+	<p>Calculer le point de la droite <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta:
+	\begin{bmatrix}x & y \end{bmatrix}=\begin{bmatrix}1 & -2 \end{bmatrix}+
+	k\begin{bmatrix}4 & -1 \end{bmatrix}"/> le plus près du point 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?P(-4,-5)"/> en utilisant une  projection orthogonale sur un vecteur directeur.</p>
+	<a href="javascript:toggle('toggleTextc');">Réponses</a>
+	<div id="toggleTextc" style="display:none">
+	Schéma : <br><img width=33% src="Examen2PrepQ12.jpg"/><br>
+	Nommons <img valign=middle src="http://latex.codecogs.com/svg.latex?R"/> le pt de <img valign=middle src="http://latex.codecogs.com/svg.latex?\Delta"/> le plus près de <img valign=middle src="http://latex.codecogs.com/svg.latex?P(-4,-5)"/> et prenons <img valign=middle src="http://latex.codecogs.com/svg.latex?X(1,-2)"/>.<br>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\begin{align*}
+		\overrightarrow{XR}&=\overrightarrow{XP}_{\overrightarrow{d}} \\
+			&=\frac{\begin{bmatrix}-5 &  -3\end{bmatrix}\cdot \begin{bmatrix}4 & -1 \end{bmatrix}}
+			{\begin{bmatrix}4 & -1 \end{bmatrix}\cdot \begin{bmatrix}4 & -1 \end{bmatrix}}
+			\begin{bmatrix}4 & -1 \end{bmatrix} \\
+			&=\frac{-17}{17}\begin{bmatrix}4 & -1 \end{bmatrix} \\
+			&=\begin{bmatrix}-4 & 1 \end{bmatrix} \\
+		\overrightarrow{OR}&=\overrightarrow{OX}+\overrightarrow{XR} \\
+			&=\begin{bmatrix}1 & -2 \end{bmatrix} + \begin{bmatrix}-4 & 1 \end{bmatrix} \\
+			&=\begin{bmatrix}-3 & -1 \end{bmatrix} \\	
+		\end{align*}"/>
+	Et ainsi, on obtient <img valign=middle src="http://latex.codecogs.com/svg.latex?R(-3,-1)"/>.
+	</div></li>
+			
+	</ol>
+	</BODY>
+</HTML>
+
+
+
+
+
+

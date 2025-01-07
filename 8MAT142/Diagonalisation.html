@@ -1,0 +1,370 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+		border:1;
+	}
+	li {
+		padding-bottom: 30;
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;
+		text-align: center;	
+		valign:middle;		
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8MAT142 - Algèbre vectorielle et matricielle</title>
+	</HEAD>
+	<BODY>
+	<h1>La diagonalisation</h1>
+	
+	<h2>Pourquoi diagonaliser</h2>
+	<p>Il est intéressant de construire une matrice diagonale <img src="http://latex.codecogs.com/svg.latex?D"/> à partir d'une matrice <img src="http://latex.codecogs.com/svg.latex?A"/> respectant l'égalité <img src="http://latex.codecogs.com/svg.latex?D=P^{-1}AP"/>, où <img src="http://latex.codecogs.com/svg.latex?P"/> est une matrice inversible.  En effet, si on sait construire une telle matrice, il est alors possible de calculer plus rapidement <img valign=middle src="http://latex.codecogs.com/svg.latex?A^k,k\in \Re"/>.
+	</p>
+	<p>Soit <img valign=middle src="http://latex.codecogs.com/svg.latex?A,P,D,"/> 3 matrices telles que <img  src="http://latex.codecogs.com/svg.latex?	D=P^{-1}AP"/>.  On déduit que :
+	<ol><img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+		D &= P^{-1}AP \\
+		PD &= PP^{-1}AP \\
+		PD &= I_nAP \\
+		PDP^{-1} &= APP^{-1} \\
+		PDP^{-1} &= AI_n \\
+		PDP^{-1} &= A
+	\end{align*}"/>.</ol>
+	Ainsi :<ol>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{align*}
+	A^k&=\left(PDP^{-1}\right)^k \\
+	&=\left(PDP^{-1}\right)\left(PDP^{-1}\right)...\left(PDP^{-1}\right)\left(PDP^{-1}\right)\\
+	&=PD\left(P^{-1}P\right)D\left(P^{-1}P\right)D...\left(P^{-1}P\right)DP^{-1} \\
+	&=PI_{n\times n}DI_{n\times n}...I_{n\times n}DP^{-1} \\
+	&=PD^kP^{-1} \\
+	&\blacksquare
+	\end{align*}"/></ol></p>  
+	<p>Calculer <img src="http://latex.codecogs.com/svg.latex?D^k"/> revient à élever à la <img src="http://latex.codecogs.com/svg.latex?k"/> les éléments de la diagonale de <img src="http://latex.codecogs.com/svg.latex?D"/>.  Ensuite, il suffit d'effectuer les deux multiplications à gauche et à droite et c'est terminé.</p>
+	
+		
+	<h2>Le principe de la diagonalisation</h2>
+	
+	<p>Diagonaliser une matrice <img src="http://latex.codecogs.com/svg.latex?A_{n\times n}"/> revient à trouver la <i>matrice de passage</i> <img src="http://latex.codecogs.com/svg.latex?P_{n\times n"/> telle que <img src="http://latex.codecogs.com/svg.latex?A=PDP^{-1}"/>, où <img valign=middle  src="http://latex.codecogs.com/svg.latex?D= \begin{bmatrix}d_{ij}\end{bmatrix}_{n\times n}, d_{ij}=\left\{\begin{matrix}\lambda_j & \text{ si } i=j \\ 0 & \text{ si } i\neq j \end{matrix}\right. "/>.  On a :
+	<ol><img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{align*}
+		PDP^{-1} &= A \\
+		PD	&= AP\\
+	\end{align*}"/></ol>
+	<p>Analysons la matrice <img src="http://latex.codecogs.com/svg.latex?PD"/>.  C'est en fait la matrice <img src="http://latex.codecogs.com/svg.latex?P"/> dans laquelle on a multiplié les éléments de la <img valign=middle src="http://latex.codecogs.com/svg.latex?j^{me}"/> colonne par l'élément <img valign=middle src="http://latex.codecogs.com/svg.latex?\lambda_j"/>.  Nommons <img valign=middle src="http://latex.codecogs.com/svg.latex?P_j"/> la matrice colonne qui présente les éléments de la <img valign=middle src="http://latex.codecogs.com/svg.latex?j^{me}"/> colonne de <img src="http://latex.codecogs.com/svg.latex?P"/>.  On obtient ainsi à résoudre le système :</p>
+	<ol>
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{align*}
+		\lambda_j P_j &= AP_j \\
+		0_{n\times 1} &=AP_j- \lambda_j P_j \\
+		0_{n\times 1} &=(A- \lambda_j I_{n\times n})P_j \\		
+	\end{align*}"/></ol>
+	
+	<p>Ce système compte au moins une solution pour <img valign=middle src="http://latex.codecogs.com/svg.latex?P_j"/>, soit la solution trivial <img valign=middle src="http://latex.codecogs.com/svg.latex?\left(P_j=0_{n\times 1}\right)"/>, qui ne nous intéresse pas puisque <img src="http://latex.codecogs.com/svg.latex?P"/> doit être inversible.  Pour trouver une solution intéressante, il faut donc que le système ait d'autres solutions (une infinité en fait).  On veut donc que <img valign=middle src="http://latex.codecogs.com/svg.latex?det \left(A-\lambda_j I_{n\times n}\right)=0"/>. </p>
+	
+	<h2>Quelques définitions </h2>
+	<ul><li><i>Polynôme caractéristique</i> : le polynôme caractéristique de la matrice <img src="http://latex.codecogs.com/svg.latex?A"/> est obtenu en calculant <img valign=middle src="http://latex.codecogs.com/svg.latex?det \left(A-\lambda_j I_{n\times n}\right)=0"/></li>
+	<li><i>Valeurs propres</i> de <img  src="http://latex.codecogs.com/svg.latex?A"/> : les valeurs propres d'une matrice <img src="http://latex.codecogs.com/svg.latex?A"/> sont les racines du polynôme caractéristique de <img src="http://latex.codecogs.com/svg.latex?A"/>.  Les valeurs propres sont les valeurs des <img valign=middle src="http://latex.codecogs.com/svg.latex?\lambda_j"/> de la diagonale de la matrice <img valign=middle src="http://latex.codecogs.com/svg.latex?D"/>.</li>
+	<li>Vecteur propre : Un vecteur <img src="http://latex.codecogs.com/svg.latex?X"/> qui vérifie l'équation <img src="http://latex.codecogs.com/svg.latex?AX=\lambda X"/>, c'est à dire que <img valign=middle src="http://latex.codecogs.com/svg.latex?(A-\lambda I_n)X=0_{n\times n}"/>, est appelé un <i>vecteur propre</i> associé à la valeur propre <img valign=middle src="http://latex.codecogs.com/svg.latex?\lambda"/>.</li>
+
+	<li>Matrice de passage : La matrice <img src="http://latex.codecogs.com/svg.latex?P"/> est composée, en colonne, des vecteurs propres trouvés pour les valeurs propres.  Ces vecteurs propres doivent être linéairement indépendant.</li>
+	</ul>
+	
+	<h2>Un exemple</h2>
+	Soit la matrice <img valign=middle src="http://latex.codecogs.com/svg.latex?
+	\begin{bmatrix}
+		1 & 2 \\
+		2 & -2 \\
+	\end{bmatrix}"/>.
+	<ol>
+		<li>Calculons le polynôme caractéristique :
+		<ol><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\begin{align*}
+			\begin{vmatrix}
+				1-\lambda & 2 \\
+				2 & -2-\lambda \\
+			\end{vmatrix}&=(1-\lambda)(-2-\lambda)-4\\
+			&= -2+\lambda+\lambda^2-4 \\
+			&= \lambda^2+\lambda-6 \\
+			&= (\lambda+3)(\lambda-2)\\
+			\end{align*}"/></ol>
+		<li>Les valeurs propres sont donc <img src="http://latex.codecogs.com/svg.latex?-3"/> et <img src="http://latex.codecogs.com/svg.latex?2"/>.</li>
+		<li>Trouvons des vecteurs propres.  Pour <img src="http://latex.codecogs.com/svg.latex?\lambda=-3"/> on a :<ol>
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\begin{align*}
+		\begin{bmatrix}
+		1+3 & 2 \\
+		2 & -2+3 \\
+		\end{bmatrix}
+		\begin{bmatrix}
+		x \\
+		y \\
+		\end{bmatrix}
+		&=
+		\begin{bmatrix}
+		0 \\
+		0 \\
+		\end{bmatrix}
+		\\
+		
+		\begin{bmatrix}
+		4 & 2 \\
+		2 & 1 \\
+		\end{bmatrix}
+		\begin{bmatrix}
+		x \\
+		y \\
+		\end{bmatrix}
+		&=
+		\begin{bmatrix}
+		0 \\
+		0 \\
+		\end{bmatrix}
+		L_2-\frac{1}{2}\times L_1
+		\\
+		
+		\begin{bmatrix}
+		4 & 2 \\
+		0 & 0 \\
+		\end{bmatrix}
+		\begin{bmatrix}
+		x \\
+		y \\
+		\end{bmatrix}
+		&=
+		\begin{bmatrix}
+		0 \\
+		0 \\
+		\end{bmatrix}
+		\\
+		
+		4x+2k=0\\
+		4x=-2k \\
+		x=-\frac{k}{2} \\
+		P_1=\begin{bmatrix}\frac{-k}{2} & k \end{bmatrix} \\
+		\text{disons }k=2, \text{ on obtient } \\
+		P_1=\begin{bmatrix}
+		-1\\
+		2
+		\end{bmatrix}
+ 		\end{align*}
+		"/>
+		</ol>
+		Pour <img valign=middle src="http://latex.codecogs.com/svg.latex?\lambda=2"/> on a :
+		<ol>
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\begin{align*}
+		\begin{bmatrix}
+		1-2 & 2 \\
+		2 & -2-2 \\
+		\end{bmatrix}
+		\begin{bmatrix}
+		x \\
+		y \\
+		\end{bmatrix}
+		&=
+		\begin{bmatrix}
+		0 \\
+		0 \\
+		\end{bmatrix}
+		\\
+		
+		\begin{bmatrix}
+		-1 & 2 \\
+		2 & -4 \\
+		\end{bmatrix}
+		\begin{bmatrix}
+		x \\
+		y \\
+		\end{bmatrix}
+		&=
+		\begin{bmatrix}
+		0 \\
+		0 \\
+		\end{bmatrix}
+		L_2-2\times L_1
+		\\
+		
+		\begin{bmatrix}
+		-1 & 2 \\
+		0 & 0 \\
+		\end{bmatrix}
+		\begin{bmatrix}
+		x \\
+		y \\
+		\end{bmatrix}
+		&=
+		\begin{bmatrix}
+		0 \\
+		0 \\
+		\end{bmatrix}
+		\\
+		-x+2k=0\\
+		x=2k \\
+		P_2=\begin{bmatrix}2k & k \end{bmatrix} \\
+		\text{disons }k=1, \text{ on obtient } \\
+		P_2=\begin{bmatrix}
+		2\\
+		1
+		\end{bmatrix}
+ 		\end{align*}
+		"/></ol></li>
+		<li>
+			Nous avons trouvé <img valign=middle src="http://latex.codecogs.com/svg.latex?P=
+			\begin{bmatrix}
+				-1	& 2 \\
+				2	& 1
+			\end{bmatrix}"/></li>
+		<li>On peut compter <img valign=middle src="http://latex.codecogs.com/svg.latex?
+		P^{-1}=	-\frac{1}{5}
+		\begin{bmatrix}
+				1	& -2 \\
+				-2	& -1
+			\end{bmatrix}"/></li>
+			
+		<li>
+			Vérifions notre réponse, on devrait arriver à <img valign=middle src="http://latex.codecogs.com/svg.latex?
+			D=P^{-1}AP=
+			\begin{bmatrix}
+				-3	& 0 \\
+				0	& 2
+			\end{bmatrix}"/>.
+			<ol>
+			<img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\begin{align*}
+			D &= P^{-1}AP\\
+			&=-\frac{1}{5}
+			\begin{bmatrix}
+				1	& -2 \\
+				-2	& -1
+			\end{bmatrix}
+			\begin{bmatrix}
+				1 & 2 \\
+				2 & -2 \\
+			\end{bmatrix} 
+			\begin{bmatrix}
+				-1	& 2 \\
+				2	& 1
+			\end{bmatrix}
+			 \\
+			&= \left(-\frac{1}{5}
+			\begin{bmatrix}
+				1	& -2 \\
+				-2	& -1
+			\end{bmatrix}
+			\begin{bmatrix}
+				1 & 2 \\
+				2 & -2 \\
+			\end{bmatrix}\right) 
+			\begin{bmatrix}
+				-1	& 2 \\
+				2	& 1
+			\end{bmatrix}
+			 \\
+			&=-\frac{1}{5}\begin{bmatrix}
+				-3 &  6 \\
+				-4 & -2 
+			\end{bmatrix}
+			\begin{bmatrix}
+				-1	& 2 \\
+				2	& 1
+			\end{bmatrix} \\
+			&=-\frac{1}{5}\begin{bmatrix}
+			15 & 0 \\
+			0 & -10
+			\end{bmatrix} \\
+			&=\begin{bmatrix}
+			-3 & 0 \\
+			0 & 2
+			\end{bmatrix}.
+			
+			\end{align*}"/>
+			</ol></li>
+		<li>Calculons <img src="http://latex.codecogs.com/svg.latex?A^5"/>.
+		<ol><img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\begin{align*}
+		A^5 &=	\left(PDP^{-1}\right)^5 \\
+			&=	PD^5P^{-1} \\
+			&= 
+			\begin{bmatrix}
+				-1	& 2 \\
+				2	& 1
+			\end{bmatrix}
+			\begin{bmatrix}
+			-3 & 0 \\
+			0 & 2
+			\end{bmatrix}^5
+			\left(-\frac{1}{5}
+			\begin{bmatrix}
+				1	& -2 \\
+				-2	& -1
+			\end{bmatrix}\right)\\
+			
+			&=\frac{1}{5}\begin{bmatrix}
+				-1	& 2 \\
+				2	& 1
+			\end{bmatrix}
+			\begin{bmatrix}
+			-243 & 0 \\
+			0 & 32
+			\end{bmatrix}
+			\begin{bmatrix}
+				1	& -2 \\
+				-2	& -1
+			\end{bmatrix}\\
+			&=
+			\frac{-1}{5}
+			\begin{bmatrix}
+				243 & -64 \\
+				-486	& 32
+			\end{bmatrix}
+			\begin{bmatrix}
+				1	& -2 \\
+				-2	& -1
+			\end{bmatrix} \\
+			&=
+			-\frac{1}{5}
+			\begin{bmatrix}
+				115 & 550 \\
+				550 & 940 
+			\end{bmatrix}\\
+			
+			&= \begin{bmatrix}
+				-23 & 110 \\
+				110 & -188 
+			\end{bmatrix}.
+		\end{align*}"/>
+		</ol>
+		</li>
+		<li>Vérifions avec les produits traditionnels :<ol>
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+			A^2 		&= \begin{bmatrix}1 & 2 \\ 2 & -2 \end{bmatrix}^2 	= \begin{bmatrix}5 & -2 \\ -2 & 8 \end{bmatrix} \\
+			A^2 A^2 	&=\begin{bmatrix}5 & -2 \\ -2 & 8 \end{bmatrix}^2 	= \begin{bmatrix}29 & -26 \\ -26 & 68 \end{bmatrix} \\
+			A A^4 &= \begin{bmatrix}1 & 2 \\ 2 & -2 \end{bmatrix} 
+			\begin{bmatrix}29 & -26 \\ -26 & 68 \end{bmatrix} = \begin{bmatrix}-23 & 110 \\ 110 & -188 \end{bmatrix}. \\
+			\end{align*}"/></ol>
+		</ol>
+	</BODY>
+</HTML>
+
+
+
+
+
+

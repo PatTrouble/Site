@@ -1,0 +1,122 @@
+<HTML>
+	<HEAD>
+	<style type="text/css">
+	table{
+		border-collapse: collapse;
+		border:0
+	}
+	li {
+		padding-bottom: 13
+		}
+	td,th {
+		padding-top: 5;
+		padding-bottom: 5;
+		padding-left: 20;
+		padding-right: 20;
+		text-align: center;	
+		valign:middle	
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8MAT142 - Algèbre vectorielle et matricielle</title>
+	</HEAD>
+	<BODY>
+	<h1>Laboratoire 5 : Nombres complexes et vecteur de <img size=200% src="https://latex.codecogs.com/svg.latex?\huge&space;\Re^3"/></h1>
+	
+	<ol> 
+	<li><!-- #2-->
+		<p>Soit les nombres complexes suivants : 
+		<ol><table><tr>
+			<td><img src="http://latex.codecogs.com/svg.latex?x = 125"/></td>
+			<td><img src="http://latex.codecogs.com/svg.latex?y = 3- 4i"/></td>	
+			<td><img  src="http://latex.codecogs.com/svg.latex?z = 6+4i"/></td>	</tr>
+		</table></ol>
+		</p>
+		
+		<ol type="a">
+			<!-- 9 --><li>Calculer <img valign=middle src="
+			http://latex.codecogs.com/svg.latex?y+z"/> (1 pts).</li>		
+			<!-- 375-500i --><li>Calculer <img valign=middle src="
+			http://latex.codecogs.com/svg.latex?x\times y"/>  (1 pts).</li>		
+			<!-- 3/125-4/125i --><li>Calculer <img valign=middle src="
+			http://latex.codecogs.com/svg.latex?\frac{y}{x}"/> (1 pts).</li>
+			<!-- 15+20i --><li>Calculer <img valign=middle src="
+			http://latex.codecogs.com/svg.latex?\frac{x}{y}"/> (3 pts).</li>			
+			<!--  --><li>Calculer <img valign=middle src="
+			http://latex.codecogs.com/svg.latex?y\times z"/> (3 pts).</li>		
+			<!-- 34-12i --><li>Calculer <img valign=middle src="
+			http://latex.codecogs.com/svg.latex?\frac{z}{y}"/> (3 pts).</li>
+			<li>Représenter <img valign=middle src="http://latex.codecogs.com/svg.latex?x,y"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?z"/> dans la plan D'Argand (3 pts).</li>
+			<li><!-- x=125cos(0°)	y=5cos(323°)	z=sqrt(52)cos(34°) -->Convertir 
+			<img valign=middle src="http://latex.codecogs.com/svg.latex?x,y"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?z"/> en forme trigonométrique (6 pts).</li>
+			<!--<li>   Calculer les trois racines cubiques de <img src="http://latex.codecogs.com/svg.latex?z"/> (donner votre réponse en forme cartésienne) (5 pts).</li>-->
+			<li><!-- w1=5	w2=	w3= -->Résoudre l'équation <img  src="http://latex.codecogs.com/svg.latex?w^3=125"/> (donner votre réponse en forme cartésienne) (5 pts).</li>			
+		</ol></li>
+		
+		
+	<li><!-- #1 1/9[-6 -3 -6] et 1/9[6 3 6]-->
+		<p>Construire deux vecteurs unitaires perpendiculaires aux vecteurs 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\vec{u}=\begin{bmatrix} 1 & 4 & -3\end{bmatrix}"/> et 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\vec{v}=\begin{bmatrix} 2 & 2 & -3\end{bmatrix}"/> (5 pts).</p></li>	
+		
+	<li>Soit les quatre vecteurs suivants :
+	<ol>
+		<table><tr>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{u}=\begin{bmatrix}2 & 4 & -5\end{bmatrix}"/></td>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{v}=\begin{bmatrix}-3 & -5 & 4\end{bmatrix}"/></td>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{w}=\begin{bmatrix}-4 & 1 & 4\end{bmatrix}"/></td>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{x}=\begin{bmatrix}1 & 1 & 1\end{bmatrix}"/></td>			
+		</tr></table></ol>
+		<br>
+		<ol type="a">
+		<li>	<!--|-3	 -4	 1	|
+					|-5	 1	 1	|
+					|4	 4	 1	|	= -51 -->
+		Démontrer que les vecteurs 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{v},\vec{w}"/> et  
+		<img src="http://latex.codecogs.com/svg.latex?\vec{x}"/> sont linéairement indépendants  (5 pts).</li>
+		
+<!--		<li>
+		Démontrer que les vecteurs 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{v},\vec{w}"/> et  
+		<img src="http://latex.codecogs.com/svg.latex?\vec{x}"/> forment un système générateur de <img src="http://latex.codecogs.com/svg.latex?\Re^3"/>(5 pts).</li> -->
+		
+		<li>Démontrer que les vecteurs <img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{u},\vec{v}"/> et <img src="http://latex.codecogs.com/svg.latex?\vec{x}"/> ne forment pas une base de <img src="http://latex.codecogs.com/svg.latex? \Re^3"/> (identifier clairement le critère qui n'est pas rempli) (5 pts).</li>
+
+		<li> <!-- u =  -v - x -->
+		Exprimer le vecteur <img src="http://latex.codecogs.com/svg.latex?\vec{u}"/> comme une combinaison linéaire des vecteurs 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{v},\vec{w}"/> et  
+		<img src="http://latex.codecogs.com/svg.latex?\vec{x}"/> (5 pts).</li>
+		</ol></li>
+	</ol>
+	
+	
+	<h2>Remise</h2>
+
+	<ul>
+		<li>4 points sont réservés à la propreté et la lisibilité du travail.
+		<li>Remettre une copie par équipe de 2 ou 3.</li>	
+		<li>Remettre le laboratoire au plus tard le <b>lundi 2 décembre avant 13h00</b> dans ma case au DIM ou en main propre au laborantin lors de l'atelier à 13h00.</li>
+	</ul>
+	</BODY>
+</HTML>
+
+
+
+
+
+
