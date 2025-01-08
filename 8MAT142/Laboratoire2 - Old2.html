@@ -1,0 +1,120 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+		border:1;
+	}
+	li {
+		padding-bottom: 15;
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;
+		text-align: center;	
+		valign:middle;		
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8MAT142 - Algèbre vectorielle et matricielle</title>
+	</HEAD>
+	<BODY>
+	<h1>Laboratoire 2 : Résolution de systèmes d'équations linéaires</h1>
+	
+
+	<ol> 
+	<li><!-- #1 -->
+		<p>Résoudre le système d'équations linéaires en utilisant la méthode de Cramer (7 pts).</p>
+		
+		<!-- (2, -3, 4) dat A = 4 -->
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\begin{matrix}
+			3x &+& 5y &+& 2z &=& -1 \\
+			-2x &-&  3y &-& z &=& 1 \\
+			4x &-& 2y &-& 2z &=& 6 
+		\end{matrix}"/></li>
+		
+
+		<li><p>Résoudre les systèmes d'équations suivants en utilisant la méthode de Gauss (12 pts).</p>
+			
+		<ol type="a">
+		<li><!-- 0 sol -->
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\begin{matrix}
+		x	&-& y	&+& 2z	&+& w	&=1 \\
+		2x	&-& 3y	&+& 2z	&+& 2w	&=4 \\
+		-8x	&+& y	&-& z	&-& 4w	&=2\\
+		7x	&+& 2y	&+& 3z	&+& 3w	&=-3
+		\end{matrix}"/></li>
+		
+		<!-- infinité sol -->
+		<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\begin{matrix}
+		x		&-&2y		&+&2z		&+&w	&= 1\\
+		3x		&-&6y		&+&8z		&-&w	&= 1\\
+		-5x		&+&10y		&-&7z		&-&11w 	&=-8\\
+		-3x		&+&6y		&-&11z		&+&7w	&= 2
+		\end{matrix}"/></li></ol>
+	</li>
+	
+	<li>
+<!--	-3	1	5
+		-5	2	7
+		-7	3	10 -->
+	<p>Calculer la matrice inverse de <img valign=middle src="http://latex.codecogs.com/svg.latex?A=
+	\begin{bmatrix}
+	1 	&	-5 	&	3 \\
+	-1 	&	-5 	&	4 \\
+	1 	&	-2 	&	1
+	\end{bmatrix}"/> en utilisant la méthode Gauss-Jordan (7 pts).</p>
+	</li>
+	
+	<!-- arccos(-27/(v25 * v37))
+	-->
+	<li>Calculer l'angle entre les vecteurs 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{u}=\begin{bmatrix} 4 & -3 \end{bmatrix}"/> et 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{v}=\begin{bmatrix} -6 & 1 \end{bmatrix}"/> (5 pts).
+	</li>
+	
+	<!-- [x  y] = [-2   4] + k[5  -12]  
+		12x+5y=-4
+	-->
+	<li>Soit <img src="http://latex.codecogs.com/svg.latex?\Delta"/> une droite qui passe par les points 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?P\left(-2, 4\right)"/> et 
+	<img valign=middle src="http://latex.codecogs.com/svg.latex?Q\left(3, -8\right)"/> (12 pts).
+	<ol type="a">
+		<li>Donner une équation vectorielle de <img src="http://latex.codecogs.com/svg.latex?\Delta"/>.</li>
+		<li>Donner l'équation symétrique de <img src="http://latex.codecogs.com/svg.latex?\Delta"/>.</li>
+		<li>Donner une équation normale de <img src="http://latex.codecogs.com/svg.latex?\Delta"/>.</li>
+	</ol></li>
+	</ol>
+	
+	
+	<h2>Remise</h2>
+
+	<ul>
+		<li>7 points sont réservés à la propreté et la lisibilité du travail.
+		<li>Remettre une copie par équipe.</li>		
+		<li>Remettre le laboratoire au plus tard le <b>lundi 13 novembre avant 15h45</b> dans ma case au DIM ou en main propre au laborantin lors du cours.</li>
+	</ul>
+	</BODY>
+</HTML>
+
+
+
+
+
+

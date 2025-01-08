@@ -1,0 +1,106 @@
+<HTML>
+	<HEAD>
+	<style type="text/css">
+	table{
+		border-collapse: collapse;
+		border:0
+	}
+	li {
+		padding-bottom: 13
+		}
+	td,th {
+		padding-top: 5;
+		padding-bottom: 5;
+		padding-left: 20;
+		padding-right: 20;
+		text-align: center;	
+		valign:middle	
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8MAT142 - Algèbre vectorielle et matricielle</title>
+	</HEAD>
+	<BODY>
+	<h1>Laboratoire 4 : Nombres complexes et vecteur de <img size=200% src="https://latex.codecogs.com/svg.latex?\huge&space;\Re^3"/></h1>
+	
+<ol>	
+	<li><!-- #1 1/9[-6 -3 -6] et 1/9[6 3 6]-->
+		Construire deux vecteurs unitaires perpendiculaires aux vecteurs 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\vec{u}=\begin{bmatrix} 1 & 4 & -3\end{bmatrix}"/> et 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?
+		\vec{v}=\begin{bmatrix} 2 & 2 & -3\end{bmatrix}"/> (5 pts).</li>	
+		
+	<li>Soit les quatre vecteurs suivants :
+	<ol>
+		<table><tr>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{u}=\begin{bmatrix}2 & 4 & -5\end{bmatrix}"/></td>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{v}=\begin{bmatrix}-3 & -5 & 4\end{bmatrix}"/></td>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{w}=\begin{bmatrix}-4 & 1 & 4\end{bmatrix}"/></td>
+			<td><img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{x}=\begin{bmatrix}1 & 1 & 1\end{bmatrix}"/></td>			
+		</tr></table></ol>
+		<br>
+		<ol type="a">
+		<li>	<!--|-3	 -4	 1	|
+					|-5	 1	 1	|
+					|4	 4	 1	|	= -51 -->
+		Démontrer que les vecteurs 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{v},\vec{w}"/> et  
+		<img src="http://latex.codecogs.com/svg.latex?\vec{x}"/> sont linéairement indépendants  (5 pts).</li>
+		
+	<li>Démontrer que les vecteurs 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{v},\vec{w}"/> et  
+		<img src="http://latex.codecogs.com/svg.latex?\vec{x}"/> forment un système générateur de <img src="http://latex.codecogs.com/svg.latex?\mathbb{R}^3"/>(5 pts).</li>
+		
+		<li>Démontrer que les vecteurs <img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{u},\vec{v}"/> et <img src="http://latex.codecogs.com/svg.latex?\vec{x}"/> ne forment pas une base de <img src="http://latex.codecogs.com/svg.latex? \mathbb{R}^3"/> (identifier clairement le critère qui n'est pas rempli) (5 pts).</li>
+
+		<li> <!-- u =  -v - x -->
+		Exprimer le vecteur <img src="http://latex.codecogs.com/svg.latex?\vec{u}"/> comme une combinaison linéaire des vecteurs 
+		<img valign=middle src="http://latex.codecogs.com/svg.latex?\vec{v},\vec{w}"/> et  
+		<img src="http://latex.codecogs.com/svg.latex?\vec{x}"/> (5 pts).</li>
+		</ol></li>
+	
+	<li><!-- Gauche à -19 r14 / 14 de distance  -->
+	Déterminer précisément la position relative des droites suivantes : (10 pts) <br>
+	<ol><img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+		\Delta_1 &: \begin{bmatrix}x & y & z\end{bmatrix} = \begin{bmatrix}4 & 1 & -2\end{bmatrix} + r\begin{bmatrix}1 & -2 & 4\end{bmatrix},r\in \mathbb{R} \\
+		\Delta_2 &: \begin{bmatrix}x & y & z\end{bmatrix} = \begin{bmatrix}2 & -5 & 1\end{bmatrix} + s\begin{bmatrix}2 & -5 & 11\end{bmatrix},s\in \mathbb{R} \\
+		\end{align*}"/></ol> 
+	</li>
+	<li><!-- || distinctes à 2 racine 2 -->
+		Déterminer précisément la position relative de la droite et du plan : (10 pts)<br>
+		<ol><img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{align*}
+		\Delta &: \begin{bmatrix}x & y & z\end{bmatrix} = \begin{bmatrix}3 & -3 & 2\end{bmatrix} + k\begin{bmatrix}-1 & 4 & 2\end{bmatrix},k\in \mathbb{R} \\
+		\pi &: \begin{bmatrix}x & y & z\end{bmatrix} = \begin{bmatrix}5 & 1 & -2\end{bmatrix} + r\begin{bmatrix}1 & -1 & 1\end{bmatrix} + s\begin{bmatrix}2 & -1 & 3\end{bmatrix}, r,s\in \mathbb{R}
+		\end{align*}"/></ol> 
+	</li>
+</ol>
+	
+	
+	<h2>Remise</h2>
+
+	<ul>
+		<li>5 points sont réservés à la propreté et la lisibilité du travail.
+		<li>Remettre une copie par équipe de 2 ou 3.</li>	
+		<li>Remettre le laboratoire au plus tard le <b>jeudi 14 décembre avant 16h00</b> dans ma case au DIM ou en main propre au laborantin lors de l'atelier du 13 ou 14 décembre, selon votre horaire.</li>
+	</ul>
+	</BODY>
+</HTML>
+
+
+
+
+
+

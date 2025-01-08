@@ -1,0 +1,83 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+		border:1;
+	}
+	li {
+		padding-bottom: 15;
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;
+		text-align: center;	
+		valign:middle;		
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8MAT142 - Algèbre vectorielle et matricielle</title>
+	</HEAD>
+	<BODY>
+	<h1>Laboratoire 3 : Diagonalisation</h1>
+	
+
+	<ol> 
+	<!-- 
+	Valeur propre : {-2,1,2}
+	
+	P = 	1		1		1
+			1		0		-1
+			0		1		1
+			
+	A^10=	1		0		1023
+			-1023	1024	1023
+			0		0		1024
+ -->
+	<p>Soit <img valign=middle src="http://latex.codecogs.com/svg.latex?A=
+	\begin{bmatrix}
+	-1 & -1 & 2 \\
+	-4 & 2 & 4 \\
+	1 & -1 & 0
+	\end{bmatrix}"/>.</p>
+	
+	
+	<ol type="a">
+		<li>Calculer et factoriser le polynôme caractéristique de la matrice <img src="http://latex.codecogs.com/svg.latex?A"/>.  Vous aurez peut-être besoin de <a src="/www.wolframalpha.com">Wolframalpha</a> à cette étape (5 pts). </li>
+		<li>Calculer les valeurs propres de <img src="http://latex.codecogs.com/svg.latex?A"/> et la matrice diagonalisée obtenue (5 pts).</li>
+		<li>Calculer une matrice de passage <img src="http://latex.codecogs.com/svg.latex?P"/> afin de diagonaliser <img  src="http://latex.codecogs.com/svg.latex?A"/> (15  pts).</li>
+		<li>Calculer <img src="http://latex.codecogs.com/svg.latex?P^{-1}"/> en utilisant la méthode Gauss-Jordan (10 pts).</li>
+		<li>Calculer <img valign=middle src="http://latex.codecogs.com/svg.latex?A^{10}"/> en utilisant votre matrice de passage (10 pts).</li>
+	</ol></li>
+	</ol>
+	
+	
+	<h2>Remise</h2>
+
+	<ul>
+		<li>5 points sont réservés à la propreté et la lisibilité du travail.
+		<li>Remettre une copie par équipe de 2 ou 3.</li>		
+		<li>Remettre le laboratoire au plus tard le <b>mercredi 23 novembre avant 16h00</b> dans ma case au DIM ou en main propre au laborantin lors de l'atelier à 16h00.</li>
+	</ul>
+	</ul>
+	</BODY>
+</HTML>
+
+
+
+
+
+
