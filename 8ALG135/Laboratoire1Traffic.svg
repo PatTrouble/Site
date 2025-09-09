@@ -1,0 +1,30 @@
+<svg width="560" height="320" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker markerUnits="strokeWidth" orient="auto" refY="2" refX="6" markerHeight="4" markerWidth="6" id="arrowhead">
+   <polygon id="svg_1" fill="black" points="0 0, 6 2, 0 4"/>
+  </marker>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <line stroke="black" id="svg_2" marker-end="url(#arrowhead)" stroke-width="2" y2="62.32119" x2="546.32259" y1="62.32119" x1="9.32259"/>
+  <line stroke="black" id="svg_4" marker-end="url(#arrowhead)" stroke-width="2" y2="238.19222" x2="544.65593" y1="238.19222" x1="7.65592"/>
+  <line transform="rotate(-90 103.657 157.548)" stroke="black" id="svg_5" marker-end="url(#arrowhead)" stroke-width="2" y2="157.54821" x2="256.32315" y1="157.54821" x1="-49.01063"/>
+  <line transform="rotate(90 260.323 155.882)" stroke="black" id="svg_6" marker-end="url(#arrowhead)" stroke-width="2" y2="155.88155" x2="412.98953" y1="155.88155" x1="107.65575"/>
+  <line transform="rotate(-90 416.989 155.881)" stroke="black" id="svg_8" marker-end="url(#arrowhead)" stroke-width="2" y2="155.88155" x2="569.6559" y1="155.88155" x1="264.32211"/>
+  <line transform="rotate(-90 103.656 282.548)" stroke="black" id="svg_9" marker-end="url(#arrowhead)" stroke-width="2" y2="282.54848" x2="139.65672" y1="282.54848" x1="67.65584"/>
+  <line transform="rotate(90 260.323 25.4514)" stroke="black" id="svg_10" marker-end="url(#arrowhead)" stroke-width="2" y2="25.45145" x2="278.58121" y1="25.45145" x1="242.0642"/>
+  <line transform="rotate(90 416.99 279.821)" stroke="black" id="svg_11" marker-end="url(#arrowhead)" stroke-width="2" y2="279.82121" x2="452.98945" y1="279.82121" x1="380.98857"/>
+  <line transform="rotate(-180 43.0503 238.192)" stroke="black" id="svg_12" marker-end="url(#arrowhead)" stroke-width="2" y2="238.19221" x2="79.05078" y1="238.19221" x1="7.0499"/>
+  <line stroke="black" id="svg_13" marker-end="url(#arrowhead)" stroke-width="2" y2="62.32119" x2="82.23261" y1="62.32119" x1="10.23173"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" fill="#000000" id="svg_14" y="54.85917" x="23.9207" stroke-width="0" stroke="black">1000</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" fill="#000000" id="svg_15" y="54.85917" x="497.1788" stroke-width="0" stroke="black">200</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" fill="#000000" id="svg_16" y="231.10918" x="17.5336" stroke-width="0" stroke="black">225</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" fill="#000000" id="svg_17" y="230.46402" x="498.38847" stroke-width="0" stroke="black">375</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" fill="#000000" id="svg_18" y="31.95595" x="105.21102" stroke-width="0" stroke="black">50</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" fill="#000000" id="svg_20" y="291.63335" x="107.79167" stroke-width="0" stroke="black">700</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" fill="#000000" id="svg_22" y="291.63337" x="423.9207" stroke-width="0" stroke="black">700</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" fill="#000000" id="svg_23" y="31.95594" x="262.63038" stroke-width="0" stroke="black">350</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" fill="#000000" id="svg_24" y="291.63334" x="263.27554" stroke-width="0" stroke="black">200</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" fill="#000000" id="svg_25" y="31.95594" x="418.38847" stroke-width="0" stroke="black">300</text>
+ </g>
+</svg>
