@@ -1,0 +1,105 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+		border:1;
+	}
+	li {
+		padding-bottom: 10;
+	}
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;
+		text-align: center;	
+		valign:middle;		
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8ALG135 - Algèbre Linéaire</title>
+	</HEAD>
+	<BODY>
+	<h1>Laboratoire 2 : Inverse par blocs</h2>
+	
+	<h2>Mise en situation :</h2>
+	<ul>
+		Nous avons une matrice <img valign=middle src="http://latex.codecogs.com/svg.latex?6\times 6"/> à inverser.  Nous allons, dans Excel, inverser cette matrice en utilisant plusieurs méthodes.
+	</ul>
+	
+
+	<h2>TAF</h2>
+	
+	<ol>
+		Soit <img valign=middle src="http://latex.codecogs.com/svg.latex?A=\begin{bmatrix}
+			-2	&	1	&	1	&	-6	&	-5	&	1 \\
+			7	&	-4	&	2	&	5	&	8	&	-8 \\
+			0	&	0	&	-3	&	1	&	-5	&	3 \\
+			0	&	0	&	-2	&	1	&	0	&	2 \\
+			0	&	0	&	0	&	0	&	8	&	2 \\
+			0	&	0	&	0	&	0	&	-1	&	0
+		\end{bmatrix}"/>
+	<li>
+		<ul>(3 pts)
+			<li>Dans Excel, entrer la matrice <img src="http://latex.codecogs.com/svg.latex?A "/>.  </li>
+			<li>À sa droite, inverser  la matrice en utilisant la fonction &laquo; InverseMat &raquo;.  C'est le seul endroit où l'utilisation de cette fonction est permise.</li>
+		</ul>
+	</li>
+	<li>
+		<ul>(10 pts)
+			<li>Copier la matrice <img src="http://latex.codecogs.com/svg.latex?A"/> dans <img valign=middle src="http://latex.codecogs.com/svg.latex?[A\;|\;I_6]"/>.</li>
+			<li>Échelonner la matrice en utilisant la méthode du pivot sur 
+			sur <img valign=middle src="http://latex.codecogs.com/svg.latex?[A\;|\;I_6]"/>.</li>
+		</ul>
+	</li>
+	<li>
+		<ul>(10 pts)
+			<li>Copier la matrice <img src="http://latex.codecogs.com/svg.latex?A"/>.  Couper par des couleurs (ou des teintes de gris) le fond des cases afin de définir une matrice en 2 blocs en respectant les tailles suivantes :
+			<img valign=middle src="http://latex.codecogs.com/svg.latex?\begin{bmatrix}
+				A_{4\times 4} & A_{4\times 2}  \\
+				A_{2\times 4} &  A_{2\times 2}\\
+				\end{bmatrix} "/> .</li>
+			<li>Inverser la matrice <img src="http://latex.codecogs.com/svg.latex?A"/> par bloc obtenue.
+			<li>Pour inverser la sous-matrice <img valign=middle src="http://latex.codecogs.com/svg.latex?A_{11}"/> de format <img valign=middle src="http://latex.codecogs.com/svg.latex?4\times 4"/>, utiliser aussi un découpage en bloc (<img valign=middle src="http://latex.codecogs.com/svg.latex?2\times 2"/>).</li>
+			<li>Pour le produit de matrice, la fonction &laquo; ProduitMat &raquo;.</li>
+		</ul>
+	</li>
+	</ol>
+	
+	<h3>Commentaires généraux :</h3>
+	<ul>
+		<li>Toutes les matrices doivent avoir minimalement des cellules centrées, des largeurs de colonnes adéquates, des bordures qui donnent un air de matrice aux cases.</li>
+		<li>Identifier vos matrices dans le fichier Excel pour que le lecteur s'y retrouve.</li>		
+		<li>C'est la version papier qui sera corrigée, le fichier Excel est vérifié seulement.</li>		
+		<li>Utiliser des formules pour copier les matrices et des références absolues au besoin.</li>
+		<li>Le même travail avec une matrice différente pourrait être demandé plus tard, après la correction.</lI>
+	</ul>
+	
+	<h2>Remise</h2>
+
+	<ul>
+		<li>2 points sont réservés pour la présentation du travail.</li>
+		<li>Déposer le fichier Excel sur Moodle.
+		<li>Remettre 1 copie par équipe de 2 ou 3 étudiants avant le <b>mercredi 22 octobre 18h30</b> dans ma case au <img valign=middle src="http://latex.codecogs.com/svg.latex?4^{me} "/> étage au DIM ou en main propre au cours.</li>
+	</ul>
+	</BODY>
+</HTML>
+
+
+
+
+
+
