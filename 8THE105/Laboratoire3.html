@@ -1,0 +1,118 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+		border:1;
+	}
+	li {
+		padding-bottom: 10;
+	}
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;
+		text-align: center;	
+		valign:middle;		
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8THE105 : Ensemble, relations et fonctions</title>
+	</HEAD>
+	<BODY>
+	<h1>Laboratoire 3</h1>
+	
+	<h2>Preuves :</H2>
+	Ici, assurez-vous en comparant que les preuves présentées sont différentes de celles de vos collègues.
+	
+	<ol>
+		<li>Démontrer par contradiction qu'il n’existe pas de plus petit nombre rationnel strictement positif.<br>
+		C'est à dire : <img valign=middle src="http://latex.codecogs.com/svg.latex?
+			\neg \left(\exists x\in \mathbb{Q},\forall y\in \mathbb{Q} \mid y\leq x \right)"/> (7 pts)</li>
+		<li>Démontrer que l'ensemble <img valign=middle src="http://latex.codecogs.com/svg.latex?S=\left\{x\in P\left(\mathbb{R^+}\right)\mid \left((a\in x) \land (b\in x)\right) \rightarrow ab\in x\right\} "/> (7 pts).
+		
+	</ol>
+	<H2>Relations</h2>
+	
+	<ol start="3"> 
+		<li><p>Considérons l'ensemble <img valign=middle src="http://latex.codecogs.com/svg.latex?\( A = \{1, 2, 3, 4, 5, 6\} \)"/> et les deux relations suivantes : </p>
+		
+		<ul>
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			R_1 = \{(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (1, 2), (2, 1), (3, 4), (4, 3), (5, 6), (6,5)\}"/></li>
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			R_2 = \{(1,1),(2, 2), (3, 3), (4,4), (5, 5), (6, 6), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6)\}"/></li>
+		</ul>
+
+		<p>Pour chaque relation <img valign=middle src="http://latex.codecogs.com/svg.latex? R_1 \text { et } R_2 "/> :</p> 
+		<ol type="a">
+			<li>Construire la matrice d'adjacence (6 pts).</li>
+			<li>Représenter la relation par un graphe orienté (6 pts).</li>
+			<li>Déterminer si la relation est (réflexive, irréflexive, symétrique, antisymétrique, transitive, connexe, dense).  <br>
+			Justifiez vos réponses en mentionnant les éléments ou contre-exemples pertinents (12 pts).</li>
+		</ol></li>
+		
+		<li><p>Soit la relation d'équivalence <img valign=middle src="http://latex.codecogs.com/svg.latex?R=\{ (a,b) \in A \times A \mid a \text{ compte le m\^eme nombre de facteur que } b\}"/> où <img valign=middle src="http://latex.codecogs.com/svg.latex?A=\{0,1,2,3, ..., 15\}"/>.</p>
+		
+		<ol type="a">
+			<li>Représenter la relation <img valign=middle src="http://latex.codecogs.com/svg.latex?R"/> en extention (4 pts).</li>
+			<li>Représenter la relation l'aide d'un graphe orienté (4 pts).</li>
+			<li>Énumérer toutes les classes d'équivalence de <img src="http://latex.codecogs.com/svg.latex?R"/> (5 pts).</li>
+		</ol></li>
+		
+		<li><p>Soit la relation d'ordre <img valign=middle src="http://latex.codecogs.com/svg.latex?\preceq"/> sur l'ensemble <img valign=middle src="http://latex.codecogs.com/svg.latex?A=\{a,b,c,d,f,g,h,i,j\}"/> représenté par la diagramme de Hasse suivant (15 pts):</p>
+		
+		<ol><iframe src="Labo3DiagramHasse.svg" width="250" height="290" style="margin-left: 100px;"></iframe></ol>
+		<br>
+		
+		<ul>
+			<li>S'agit-il d'un ordre total ou partiel ? Justifier votre réponse.</li>
+			<li>Identifier les éléments demandés
+				<ol type="a">
+					<li>Éléments minimaux</li>
+					<li>Éléments maximaux</li>
+					<li>Élément le plus grand</li>
+					<li>Élément le plus petit</li>
+					
+					<li>Minorant de {b,e}</li>
+					<li>Majorant de {b,e}</li>
+					<li>Minorant de {b,d,g}</li>
+					<li>Majorant de {b,d,g}</li>
+					
+					<li>Infimum de {b,e}</li>
+					<li>Supremum de {b,e}</li>
+					<li>Infimum de {b,d,g}</li>
+					<li>Supremum de {b,d,g}</li>
+				</ol> </li>
+		
+		</li> 
+	</ol>
+		
+
+	<h2>Remise</h2>
+
+	<ul>
+		<li>4 points sont réservés pour la présentation du travail (travail sur 70).</li>		
+		<li>Remettre 1 copie par équipe de 2 ou 3 étudiants avant le <b>jeudi 27 novembre à 18h45</b> dans ma case au 4me étage au DIM ou au cours d'algèbre linéaire en main propre.</li>
+	</ul>
+	</BODY>
+</HTML>
+
+
+
+
+
+
