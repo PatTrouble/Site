@@ -1,0 +1,41 @@
+<svg width="250" height="290" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <ellipse ry="4" rx="4" id="svg_29" cy="221.06589" cx="223.14623" stroke="#000" fill="#000000"/>
+  <text fill="#000000" stroke="#000" x="103.05644" y="167.81082" id="svg_30" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" font-weight="normal">d</text>
+  <ellipse ry="4" rx="4" id="svg_33" cy="19.11278" cx="21.83792" stroke="#000" fill="#000000"/>
+  <text fill="#000000" stroke="#000" x="232.20194" y="159.25754" id="svg_34" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" font-weight="normal">e</text>
+  <ellipse ry="4" rx="4" id="svg_35" cy="269.0659" cx="169.47548" stroke="#000" fill="#000000"/>
+  <text fill="#000000" stroke="#000" x="177.56778" y="277.42827" id="svg_36" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" font-weight="normal">a</text>
+  <ellipse ry="4" rx="4" id="svg_37" cy="153.16173" cx="120.32915" stroke="#000" fill="#000000"/>
+  <text fill="#000000" stroke="#000" x="230.519" y="226.42828" id="svg_38" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" font-weight="normal">c</text>
+  <ellipse ry="4" rx="4" id="svg_39" cy="218.42829" cx="118.32915" stroke="#000" fill="#000000"/>
+  <text fill="#000000" stroke="#000" x="100.64096" y="225.42828" id="svg_40" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" font-weight="normal">b</text>
+  <line id="svg_77" y2="218.10751" x2="119.53016" y1="269.10751" x1="169.53016" stroke="#000" fill="none"/>
+  <line id="svg_78" y2="220.10751" x2="119.53016" y1="152.10751" x1="119.53016" stroke="#000" fill="none"/>
+  <line id="svg_81" y2="219.10752" x2="224.53016" y1="271.10752" x1="170.53016" fill="none" stroke="#000"/>
+  <ellipse ry="4" rx="4" id="svg_1" cy="153.16173" cx="223.14624" stroke="#000" fill="#000000"/>
+  <line fill="none" stroke="#000" x1="222.53015" y1="221.10752" x2="222.53015" y2="153.10017" id="svg_2"/>
+  <text fill="#000000" stroke="#000" x="116.30933" y="71.47902" id="svg_3" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" font-weight="normal">g</text>
+  <ellipse ry="4" rx="4" id="svg_4" cy="85.02845" cx="223.14624" stroke="#000" fill="#000000"/>
+  <line fill="none" stroke="#000" x1="222.53015" y1="152.10752" x2="222.53015" y2="84.10017" id="svg_5"/>
+  <text fill="#000000" stroke="#000" x="233.20194" y="24.40715" id="svg_6" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" font-weight="normal">J</text>
+  <ellipse ry="4" rx="4" id="svg_7" cy="18.52845" cx="224.14624" stroke="#000" fill="#000000"/>
+  <line fill="none" stroke="#000" x1="223.53015" y1="83.10752" x2="223.53015" y2="15.10017" id="svg_8"/>
+  <text style="cursor: move;" fill="#000000" stroke="#000" x="4.91347" y="94.99575" id="svg_9" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" font-weight="normal">f</text>
+  <ellipse ry="4" rx="4" id="svg_10" cy="84.16173" cx="121.32915" stroke="#000" fill="#000000"/>
+  <line id="svg_11" y2="151.10751" x2="120.53016" y1="83.10751" x1="120.53016" stroke="#000" fill="none"/>
+  <line fill="none" stroke="#000" x1="118.53016" y1="218.10752" x2="222.53015" y2="153.10752" id="svg_12"/>
+  <line fill="none" stroke="#000" x1="222.53015" y1="83.10753" x2="121.53016" y2="153.10752" id="svg_13"/>
+  <line fill="none" x1="222.53016" y1="20.10753" x2="121.53016" y2="84.10753" id="svg_14" stroke="#000"/>
+  <ellipse stroke="#000" ry="4" rx="4" id="svg_15" cy="87.14146" cx="21.79137" fill="#000000"/>
+  <text fill="#000000" stroke="#000" x="229.20194" y="88.25754" id="svg_16" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" font-weight="normal">h</text>
+  <line stroke="#000" fill="none" x1="119.53016" y1="153.10752" x2="21.98213" y2="87.10188" id="svg_17"/>
+  <line stroke="#000" fill="none" x1="21.64377" y1="18.46781" x2="121.53016" y2="83.10753" id="svg_18"/>
+  <text style="cursor: move;" fill="#000000" stroke="#000" x="6.84952" y="24.93004" id="svg_20" font-size="24" font-family="Noto Sans JP" text-anchor="start" xml:space="preserve" font-weight="normal">i</text>
+  <path id="svg_19" d="m21.27929,20.02058" opacity="undefined" stroke="#000" fill="none"/>
+  <path id="svg_27" d="m19.83528,149.36175" opacity="undefined" stroke="#000" fill="none"/>
+  <line id="svg_31" y2="86.66307" x2="21.86349" y1="18.66307" x1="21.86349" stroke="#000" fill="none"/>
+ </g>
+
+</svg>
