@@ -1,0 +1,126 @@
+<HTML>
+	<HEAD>
+	<style>
+	table{
+		border-collapse: collapse;;
+		border:1;
+	}
+	li {
+		padding-bottom: 10;
+	}
+	td,th {
+		padding-top: 20;
+		padding-bottom: 20;
+		padding-left: 20;
+		padding-right: 20;
+		text-align: center;	
+		valign:middle;		
+	}
+	</style>
+	<script > 
+		function toggle(idRep) {
+			var ele = document.getElementById(idRep);
+			
+			if(ele.style.display == "block") {
+					ele.style.display = "none";		
+			}
+			else {
+				ele.style.display = "block";
+			}
+		} 
+	</script>
+	<!-- https://www.codecogs.com/latex/eqneditor.php -->
+	<title>8ALG135 - Algèbre Linéaire</title>
+	</HEAD>
+	<BODY>
+	<h1>Laboratoire 3 : Espace vectoriel</h2>
+	
+	<h2>Espace vectoriel</h2>
+	
+	
+	<ol>
+		<li>Nous avons définit en classe l'ensemble V et les opérations suivantes :
+		<ul>
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?
+			V=\left\{
+				\begin{bmatrix}
+				u_1 \\
+				u_2
+				\end{bmatrix} \mid u_1\in \mathbb{R} \land u_2\in \mathbb{R}
+				\right\}  "/>.</li>
+				
+			<li>Si <img valign=middle src="http://latex.codecogs.com/svg.latex?u=\begin{bmatrix}
+			u_1 \\
+			u_2
+			\end{bmatrix}"/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?v=\begin{bmatrix}
+			v_1 \\
+			v_2
+			\end{bmatrix} "/>, <img valign=middle src="http://latex.codecogs.com/svg.latex?a\in \mathbb{R}"/> :
+			<ul>
+				<li><img valign=middle src="http://latex.codecogs.com/svg.latex?u\oplus v = \begin{bmatrix}
+				u_1+v_1 \\
+				u_2+v_2 - 1
+				\end{bmatrix}"/></li>
+				<li><img valign=middle src="http://latex.codecogs.com/svg.latex?a \odot u = \begin{bmatrix}
+				a \cdot u_1 \\
+				a \cdot u_2 - a +1
+				\end{bmatrix}"/></li>
+			</ul>
+			Nous avons démontrer que <img valign=middle src="http://latex.codecogs.com/svg.latex?V"/> respecte les premières propriétés d'un espace vectoriel.  Démontrer les trois dernières proriétés (8-9-10), soit :
+			<ol start="8">
+				<li><img valign=middle src="http://latex.codecogs.com/svg.latex?(c+d) \odot u = c\odot u \oplus d\odot u"/></li>
+				<li><img valign=middle src="http://latex.codecogs.com/svg.latex?c\odot(d\odot u)=(cd)\odot u"/></li>
+				<li><img valign=middle src="http://latex.codecogs.com/svg.latex?1\odot u = u"/></li>
+			</ol>
+		</ul>
+		</li>	
+		
+		
+		<li>Soit <img src="http://latex.codecogs.com/svg.latex?V "/> un espace vectoriel dont les opérations sont <img valign=middle src="http://latex.codecogs.com/svg.latex?\oplus "/> et <img valign=middle src="http://latex.codecogs.com/svg.latex?\odot "/>.
+		Démontrer que :
+		<ul>
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?0\odot u = 0 "/></li>
+			<li><img valign=middle src="http://latex.codecogs.com/svg.latex?-u = -1\odot u "/></li>
+		</ul></li>
+
+		<li>Soit l'ensemble <img valign=middle src="http://latex.codecogs.com/svg.latex?V=\left\{
+				\begin{bmatrix}
+				u_1 \\
+				u_2 \\
+				u_3 \\
+				\end{bmatrix} \mid u_1\in \mathbb{R} \land u_2\in \mathbb{R} \land u_3\in \mathbb{R}
+				\right\}"/> munit des deux opérations suivantes sur <img valign=middle src="http://latex.codecogs.com/svg.latex?u\in V, v\in V, a\in \mathbb{R}"/> :
+				<ul>
+					<li><img valign=middle src="http://latex.codecogs.com/svg.latex?u\oplus v = \begin{bmatrix}
+					u_1+v_1 \\
+					u_2+v_2 \\
+					u_3+v_3 \\
+					\end{bmatrix}"/></li>
+					<li><img valign=middle src="http://latex.codecogs.com/svg.latex?a \odot u = \begin{bmatrix}
+					a \cdot u_1 \\
+					a \cdot u_2 \\
+					0 \\
+					\end{bmatrix}"/></li>
+				</ul>
+			Déterminer les propriétés d'un espace vectoriel (parmi les 10 de la page 206 du manuel) qui sont respectées par 
+			<img src="http://latex.codecogs.com/svg.latex?V"/> et ses deux opérations.  Démontrer chacun de vos résultats.
+		</li>
+	</ol>
+	
+
+	<h2>Remise</h2>
+
+	<ul>
+		<li>2 points sont réservés pour la présentation du travail.</li>
+		<li>Déposer le fichier Excel sur Moodle.
+		<li>Remettre 1 copie par étudiant de la question 1 avant le <b>mardi 9 décembre 12h30</b> dans ma case au <img valign=middle src="http://latex.codecogs.com/svg.latex?4^{me} "/> étage au DIM ou en main propre au cours 8THE105 (déjà fait pour la majorité).</li>
+		<li>Remettre 1 copie par équipe de 2 ou 3 étudiants des questions 2-3 avant le <b>mercredi 9 décembre 12h30</b> dans ma case au <img valign=middle src="http://latex.codecogs.com/svg.latex?4^{me} "/> étage au DIM ou en main propre au cours 8THE105.</li>
+	</ul>
+	</BODY>
+</HTML>
+
+
+
+
+
+
